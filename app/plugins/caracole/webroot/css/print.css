@@ -1,0 +1,34 @@
+/**
+ *	print.css
+ *	This file contains default print-specific rules taken from Hartija v0.8 (http://code.google.com/p/hartija/)
+ *	We wrap them in a @media print instead of using a <style media="print"> to reduce the number of HTTP requests.
+ *	Browsers download print stylesheet even if not needed and it does block rendering of the page
+ *	Cf. http://www.phpied.com/delay-loading-your-print-css/
+ **/
+@media print {
+	/* Hartija v0.8 */
+	body { width:100% !important; margin:0 !important; padding:0 !important; line-height: 1.4; word-spacing:1.1pt; letter-spacing:0.2pt; color: #000; background: none; font-size: 12pt; }
+	h1{font-size:19pt;}
+	h2{font-size:17pt;}
+	h3{font-size:15pt;}
+	h4,h5,h6{font-size:12pt;}
+	code { font: 10pt Courier, monospace; }
+	blockquote { margin: 1.3em; padding: 1em;  font-size: 10pt; }
+	hr { background-color: #ccc; }
+	img { float: left; margin: 1em 1.5em 1.5em 0; }
+	a img { border: none; }
+	a:link, a:visited { background: transparent; font-weight: 700; text-decoration: underline;color:#333; }
+	a:link[href^="http://"]:after, a[href^="http://"]:visited:after { content: " (" attr(href) ") "; font-size: 90%; }
+	a[href^="http://"] {color:#000; }
+	table { margin: 1px; text-align:left; }
+	th { border-bottom: 1px solid #333;  font-weight: bold; }
+	td { border-bottom: 1px solid #333; }
+	th,td { padding: 4px 10px 4px 0; }
+	tfoot { font-style: italic; }
+	caption { background: #fff; margin-bottom:2em; text-align:left; }
+	thead {display: table-header-group;}
+	tr {page-break-inside: avoid;}
+
+	/* DebugKit */
+	#debug-kit-toolbar { display:none; }
+}

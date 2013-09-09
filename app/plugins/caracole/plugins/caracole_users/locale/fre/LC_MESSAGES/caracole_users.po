@@ -1,0 +1,456 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Caracole Users\n"
+"POT-Creation-Date: 2010-12-09 22:38+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+
+#: \views\users\admin_index.ctp:11
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: \views\users\admin_index.ctp:13
+msgid "Master admin"
+msgstr "Admin principal"
+
+#: \views\users\admin_index.ctp:15
+msgid "Admin"
+msgstr "Admin"
+
+#: \views\users\admin_index.ctp:17
+msgid "Member"
+msgstr "Membre"
+
+#: \views\users\admin_index.ctp:19
+#: \config\i18n.php:8
+msgid "User"
+msgstr "Utilisateur"
+
+#: \views\users\admin_login.ctp:3;78
+msgid "Log in"
+msgstr "S'identifier"
+
+#: \views\users\admin_login.ctp:16
+msgid "Classic login form"
+msgstr "Formulaire d'identification classique"
+
+#: \views\users\admin_login.ctp:20
+#: \models\user.php:106
+msgid "Login"
+msgstr "Identifiant"
+
+#: \views\users\admin_login.ctp:26
+#: \views\users\admin_pass_form.ctp:31
+#: \models\user.php:118
+msgid "Password"
+msgstr "Mot de passe"
+
+#: \views\users\admin_login.ctp:29
+msgid "Log in using openId"
+msgstr "S'identifier avec openId"
+
+#: \views\users\admin_login.ctp:41
+msgid "OpenId login form"
+msgstr "Formulaire d'identification openId"
+
+#: \views\users\admin_login.ctp:44
+msgid "OpenID"
+msgstr "OpenId"
+
+#: \views\users\admin_login.ctp:54
+msgid "Back to classical login form"
+msgstr "Retour au formulaire classique"
+
+#: \views\users\admin_login.ctp:62
+msgid "Or choose a provider"
+msgstr "Ou sélectionnez un fournisseur"
+
+#: \views\users\admin_login.ctp:71
+msgid "Remember me"
+msgstr "Se souvenir de moi"
+
+#: \views\users\admin_pass.ctp:3
+#: \views\users\admin_pass_sent.ctp:3
+msgid "I forgot my password (Step 1/2)"
+msgstr "J'ai oublié mon mot de passe (Etape 1/2)"
+
+#: \views\users\admin_pass.ctp:20
+msgid "You forgot your password. Don't worry, you just have to type your email and we will send you instructions on how to regenerate it."
+msgstr "Vous avez oublié votre mot de passe. Ne vous inquiétez pas, indiquez juste votre email et nous vous renverrons des instructions vous permettant de le régénérer."
+
+#: \views\users\admin_pass.ctp:31
+msgid "Email"
+msgstr "Email"
+
+#: \views\users\admin_pass.ctp:39
+#: \views\users\admin_pass_form.ctp:49
+#: \views\users\admin_pass_form_ok.ctp:15
+#: \views\users\admin_pass_sent.ctp:15
+#: \views\users\admin_pass_token_error.ctp:16
+msgid "Back"
+msgstr "Retour"
+
+#: \views\users\admin_pass.ctp:46
+msgid "Regenerate my password"
+msgstr "Régénérer mon mot de passe"
+
+#: \views\users\admin_pass_form.ctp:3
+#: \views\users\admin_pass_form_ok.ctp:3
+#: \views\users\admin_pass_token_error.ctp:3
+msgid "I forgot my password (Step 2/2)"
+msgstr "J'ai oublié mon mot de passe (Etape 2/2)"
+
+#: \views\users\admin_pass_form.ctp:20
+msgid "You asked for generating a new password. Just type your new password and its confirmation in the fields below."
+msgstr "Vous avez demandé à regénérer votre mot de passe. Indiquez juste votre nouveau mot de passe ainsi que sa confirmation dans les champs ci-dessous."
+
+#: \views\users\admin_pass_form.ctp:38
+msgid "Confirmation"
+msgstr "Confirmation"
+
+#: \views\users\admin_pass_form.ctp:42
+#: \models\user.php:124
+msgid "Type your password again, to avoid typos."
+msgstr "Indiquez votre mot de passe à nouveau, pour éviter les fautes de frappe."
+
+#: \views\users\admin_pass_form.ctp:56
+msgid "Change my password"
+msgstr "Modifier mon mot de passe"
+
+#: \views\users\admin_pass_form_ok.ctp:8
+msgid "Your password has been changed. You can now log in with your new credentials."
+msgstr "Votre mot de passe a été modifié. Vous pouvez désormais utiliser ces identifiants pour vous connecter."
+
+#: \views\users\admin_pass_sent.ctp:8
+msgid "You should have received an email with all the needed informations to regenerate your password."
+msgstr "Vous devriez avoir recu un email contenant toutes les informations nécessaires à la régénération de votre mot de passe."
+
+#: \views\users\admin_pass_token_error.ctp:8
+msgid "It seems that the link you followed to regenerate your password expired. They do not live longer than 24 hours."
+msgstr "Il semblerait que le lien que vous avez suivi pour régénérer votre mot de passe ait expiré. Ces liens ne sont pas valables plus de 24 heures."
+
+#: \views\users\admin_pass_token_error.ctp:9
+msgid "Feel free to start the procedure again to get a fresh new link."
+msgstr "N'hésitez pas à recommencer la procédure depuis le début pour récupérer un tout nouveau lien."
+
+#: \views\users\openid_redirect.ctp:24
+msgid "Redirecting to OpenId provider, please wait..."
+msgstr "Redirection vers le fournisseur OpenId, merci de patienter..."
+
+#: \views\users\openid_redirect.ctp:25
+msgid "Please click on the Continue button to continue the OpenId authentication process."
+msgstr "Merci de cliquer sur le bouton \"Continuer\" pour continuer la procédure d'identification OpenId"
+
+#: \views\elements\email\text\pass.ctp:2
+#: \views\elements\email\html\pass.ctp:2
+msgid "Hello %1$s"
+msgstr "Bonjour %1$s"
+
+#: \views\elements\email\text\pass.ctp:7
+msgid "You forgot your password and asked for a new one. All you have to do is click on the link below :"
+msgstr "Vous avez oublié votre mot de passe et en avez demandé un nouveau. Tout ce que vous avez à faire est de cliquer sur le lien ci-dessous :"
+
+#: \views\elements\email\text\pass.ctp:16
+#: \views\elements\email\html\pass.ctp:17
+msgid "If you never asked for a new password, you can safely ignore this email."
+msgstr "Si vous n'avez pas demandé de nouveau mot de passe, vous pouvez effacer cet email sans crainte."
+
+#: \views\elements\email\text\pass.ctp:20
+#: \views\elements\email\html\pass.ctp:20
+msgid "Regards,"
+msgstr "Cordialement,"
+
+#: \views\elements\email\text\pass.ctp:22
+#: \views\elements\email\html\pass.ctp:21
+msgid "The %1$s team"
+msgstr "L'équipe %1$s"
+
+#: \views\elements\email\html\pass.ctp:7
+msgid "You forgot your password and asked for a new one. All you have to do is following %1$s."
+msgstr "Vous avez oublié votre mot de passe et en avez demandé un nouveau. Tout ce que vous avez à faire est de suivre %1$s"
+
+#: \views\elements\email\html\pass.ctp:9
+msgid "this link"
+msgstr "ce lien"
+
+#: \models\user.php:39
+msgid "You must choose a login"
+msgstr "Vous devez choisir un identifiant"
+
+#: \models\user.php:43
+msgid "Sorry, this login is already taken"
+msgstr "Désolé, cet identifiant est déjà pris"
+
+#: \models\user.php:47
+msgid "The login must be a valid email address. It will be used to send a new password if needed."
+msgstr "L'identifiant doit être une adresse mail valide. Elle sera utilisée pour vous permettre de changer votre mot de passe si vous l'oubliez."
+
+#: \models\user.php:53
+msgid "You have to choose a password"
+msgstr "Vous devez choisir un mot de passe"
+
+#: \models\user.php:57
+msgid "Your password must be at least 8 characters long."
+msgstr "Votre mot de passe doit faire au minimum 8 caractères de long."
+
+#: \models\user.php:63
+msgid "Your password and its confirmation do not match."
+msgstr "Votre mot de passe et sa confirmation ne correspondent pas."
+
+#: \models\user.php:82
+msgid "I forgot my password"
+msgstr "J'ai oublié mon mot de passe"
+
+#: \models\user.php:90
+msgid "Name"
+msgstr "Nom"
+
+#: \models\user.php:91
+msgid "Status"
+msgstr "Status"
+
+#: \models\user.php:107
+msgid "This should be a valid email address. It will be used to send a new password if needed"
+msgstr "Doit être une adresse mail valide. Elle sera utilisée pour vous permettre de changer votre mot de passe si vous l'avez oublié."
+
+#: \models\user.php:112
+msgid "Keep empty"
+msgstr "Laissez vide"
+
+#: \models\user.php:113
+msgid "Keep this field empty. It is only here to defeat a bug in Firefox. You shouldn't even be able to see that text with CSS enabled."
+msgstr "Laissez ce champ vide. Il est uniquement présent pour corriger un bug sous Firefox. Avec les CSS activées, vous ne devriez même pas lire ce message."
+
+#: \models\user.php:122
+msgid "Confirm password"
+msgstr "Mot de passe confirm."
+
+#: \models\user.php:127
+msgid "Gender"
+msgstr "Civilité"
+
+#: \models\user.php:130
+msgid "Mr."
+msgstr "M."
+
+#: \models\user.php:131
+#: \controllers\components\openid.php:394
+msgid "Mrs"
+msgstr "Mme"
+
+#: \models\user.php:132
+msgid "Miss"
+msgstr "Mlle"
+
+#: \models\user.php:135
+msgid "First name"
+msgstr "Prénom"
+
+#: \models\user.php:136
+msgid "Surname"
+msgstr "Nom"
+
+#: \models\user.php:137
+msgid "Nickname"
+msgstr "Surnom"
+
+#: \models\user.php:139
+msgid "Address"
+msgstr "Adresse"
+
+#: \models\user.php:142
+msgid "Postal code"
+msgstr "Code postal"
+
+#: \models\user.php:143
+msgid "City"
+msgstr "Ville"
+
+#: \models\user.php:144
+msgid "Telephone number"
+msgstr "Téléphone"
+
+#: \models\user.php:145
+msgid "Mobile number"
+msgstr "Portable"
+
+#: \models\user.php:150
+msgid "OpenId"
+msgstr "OpenId"
+
+#: \models\user.php:151
+msgid "Type here the associated OpenId url."
+msgstr "Indiquez votre adresse OpenId"
+
+#: \models\user.php:155
+msgid "Disable this user"
+msgstr "Désactiver cet utilisateur"
+
+#: \models\user.php:156
+msgid "Disabled users can't log in to the site at all"
+msgstr "Les utilisateurs désactivés ne peuvent pas se connecter au site"
+
+#: \models\user.php:160
+msgid "This is a member"
+msgstr "Est un membre"
+
+#: \models\user.php:162
+msgid "Members can access member_ prefixed methods. Syntax is : %1$s"
+msgstr "Les membres peuvent accéder aux actions préfixés par member_. La syntaxe est %1$s"
+
+#: \models\user.php:168
+msgid "This is an admin"
+msgstr "Est un administrateur"
+
+#: \models\user.php:170
+msgid "Admin can access the admin panel (where you are right now). Syntax is : %1$s"
+msgstr "Les administrateurs peuvent accèder à l'espace d'administration (là où vous êtes actuellement). La syntaxe est : %1$s"
+
+#: \models\user.php:176
+msgid "This is a master user"
+msgstr "Est un super administrateur"
+
+#: \models\user.php:177
+msgid "Master users can access advanced features of the admin panel"
+msgstr "Les super administrateurs peuvent accéder aux fonctions avancées de l'espace d'administration"
+
+#: \models\user.php:181
+msgid "Rights"
+msgstr "Droits"
+
+#: \models\user.php:182
+msgid "Define additional rights for this user. Have a look at the previous checkboxes for syntax examples."
+msgstr "Indiquez d'autres droits d'accès pour cet utilisateur. Pour des examples de syntaxe, regardez les cases précédentes."
+
+#: \controllers\users_controller.php:83
+msgid "Access denied. Your login or your password is incorrect."
+msgstr "Accès refusé. Votre identifiant ou votre mot de passe est incorrect."
+
+#: \controllers\users_controller.php:152
+msgid "Sorry, but this email is unknown."
+msgstr "Désolé, cette adresse mail est inconnue."
+
+#: \controllers\users_controller.php:156
+msgid "This email does not appear to be valid."
+msgstr "Cette adresse email ne semble pas valide."
+
+#: \controllers\users_controller.php:160
+msgid "You have to type your email."
+msgstr "Vous devez indiquer votre adresse mail"
+
+#: \controllers\users_controller.php:212
+msgid "%1$s : Regenerating your password"
+msgstr "%1$s : Régénérer votre mot de passe"
+
+#: \controllers\users_controller.php:301
+msgid "Keep this field empty if you don't want to change the current pass."
+msgstr "Laissez ce champ vide si vous ne souhaitez pas modifier votre mot de passe actuel."
+
+#: \controllers\users_controller.php:302
+msgid "Keep this field empty if you don't want to change the current pass (only if you wish to change your password)."
+msgstr "Laissez ce champ vide si vous ne souhaitez pas modifier votre mot de passe actuel (seulement si vous souhaitez changer votre mot de passe)."
+
+#: \controllers\components\caracole_auth.php:92
+msgid "You are not allowed to access this page."
+msgstr "Vous n'avez pas accès à cette page."
+
+#: \controllers\components\caracole_auth.php:260
+msgid "John"
+msgstr "Anne"
+
+#: \controllers\components\caracole_auth.php:261
+msgid "Doe"
+msgstr "Onyme"
+
+#: \controllers\components\caracole_auth.php:262
+msgid "John Doe"
+msgstr "Anne Onyme"
+
+#: \controllers\components\openid.php:88
+msgid "Invalid OpenId"
+msgstr "OpenId invalide"
+
+#: \controllers\components\openid.php:109
+msgid "Could not redirect to server : %1$s"
+msgstr "Impossible de rediriger vers le serveur : %1$s"
+
+#: \controllers\components\openid.php:161
+msgid "OpenId verification cancelled"
+msgstr "Vérification OpenId annulée"
+
+#: \controllers\components\openid.php:164
+msgid "OpenId verification failed : %1$s"
+msgstr "Echec de la vérification OpenId : %1$s"
+
+#: \controllers\components\openid.php:200
+msgid "You have no account registered with this openId. Please fill at least a valid email on your openId so we can create an account for you."
+msgstr "Nous n'avons pas trouvé de compte enregistré avec cette adresse OpenId. Vérifiez que vous ayez au moins une adresse email accessible sur ce compte pour que nous puissions vous créer un compte."
+
+#: \controllers\components\openid.php:206
+msgid "No user match this OpenId."
+msgstr "Aucun utilisateur ne corresponds à cet OpenId."
+
+#: \controllers\components\openid.php:245
+msgid "Could not redirect to server: %1$s"
+msgstr "Impossible de rediriger vers le serveur : %1$s"
+
+#: \controllers\components\openid.php:250
+msgid "OpenId Authentication Redirect"
+msgstr "Redirection d'identification OpenId"
+
+#: \controllers\components\openid.php:339
+msgid "Could not create the FileStore directory %1$s."
+msgstr "Impossible de créer le dosser FileStore %1$s"
+
+#: \controllers\components\openid.php:394
+msgid "Mr"
+msgstr "M."
+
+#: \config\i18n.php:9
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: \config\i18n.php:10
+msgid "New user"
+msgstr "Nouvel utilisateur"
+
+#: \config\i18n.php:11
+msgid "Edit user"
+msgstr "Modifier un utilisateur"
+
+#: \config\i18n.php:12
+msgid "User \"%1$s\" added."
+msgstr "Utilisateur \"%1$s\" ajouté."
+
+#: \config\i18n.php:13
+msgid "User \"%1$s\" edited."
+msgstr "Utilisateur \"%1$s\" modifié."
+
+#: \config\i18n.php:14
+msgid "Users deleted."
+msgstr "Utilisateurs supprimés."
+
+#: \config\i18n.php:15
+msgid "Users restored."
+msgstr "Utilisateurs restaurés."
+
+#: \config\i18n.php:16
+msgid "Users destroyed."
+msgstr "Utilisateurs détruits"
+
+#: \config\i18n.php:17
+msgid "Users reordered."
+msgstr "Utilisateurs réordonnés."
+
+#~ msgid "Password changed"
+#~ msgstr "Mot de passe modifié"
+#~ msgid "Changing your password"
+#~ msgstr "Modifier votre mot de passe"
+#~ msgid "Back to login screen"
+#~ msgstr "Retour au formulaire d'identification"
+

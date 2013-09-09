@@ -1,0 +1,7 @@
+# All files here will be user-uploaded files
+# We don't want malicious user to upload php files and then execute them, so we will disable the php engine for those directories
+# We also have protecting upload from php file, but better safe than sorry
+php_flag engine off
+
+# If the server do not understand the php_flag directive, we at least return php files as plain text files
+AddType text/plain .php .php3 .php4 .php5 .php6 .phtml

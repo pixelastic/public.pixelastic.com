@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Caracole Contact\n"
+"POT-Creation-Date: 2010-10-16 16:38+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+
+#: \views\elements\email\text\contact.ctp:1
+#: \views\elements\email\html\contact.ctp:2
+msgid "You have received a contact request :"
+msgstr "Vous avez reçu une demande de contact :"
+
+#: \views\elements\email\text\contact.ctp:4
+#: \views\elements\email\html\contact.ctp:6
+#: \views\contacts\add.ctp:23
+#: \models\contact.php:18;41
+msgid "Name"
+msgstr "Nom"
+
+#: \views\elements\email\text\contact.ctp:7
+#: \views\elements\email\html\contact.ctp:10
+#: \views\contacts\add.ctp:32
+#: \models\contact.php:44
+msgid "Email"
+msgstr "Email"
+
+#: \views\elements\email\text\contact.ctp:10
+#: \views\elements\email\html\contact.ctp:13
+#: \views\contacts\add.ctp:39
+#: \models\contact.php:47
+msgid "Message"
+msgstr "Message"
+
+#: \views\contacts\add.ctp:7
+msgid "Contact"
+msgstr "Contact"
+
+#: \views\contacts\add.ctp:33
+msgid "Will not be published, but needed to contact you back."
+msgstr "Ne sera pas publié, mais nécessaire pour pouvoir vous répondre."
+
+#: \views\contacts\add.ctp:46
+msgid "Send"
+msgstr "Envoyer"
+
+#: \views\contacts\add_ok.ctp:8
+msgid "Thank you"
+msgstr "Merci"
+
+#: \views\contacts\add_ok.ctp:13
+msgid "Thank you for your message, we'll come back to you as fast as possible."
+msgstr "Merci pour votre message, nous vous recontacterons aussi vite que possible"
+
+#: \models\contact.php:19
+msgid "Mail"
+msgstr "Mail"
+
+#: \models\contact.php:58
+msgid "You have to type your name."
+msgstr "Vous devez indiquer votre nom."
+
+#: \models\contact.php:64
+msgid "You have to type your email if you want me to contact you back."
+msgstr "Vous devez indiquer votre email pour que nous puissions vous répondre."
+
+#: \models\contact.php:68
+msgid "This email does not seem to be valid."
+msgstr "Cet email ne semble pas valide."
+
+#: \models\contact.php:74
+msgid "Haven't you something to say ?"
+msgstr "N'avez vous vraiment rien à me dire ?"
+
+#: \config\config.php:22
+msgid "%1$s : You have received a contact request"
+msgstr "%1$s : Vous avez recu une demande de contact"
+
+#~ msgid "If you have nothing to tell me, why bother to contact me ?"
+#~ msgstr ""
+#~ "Si vous n'avez rien à me dire, pourquoi prendre la peine de me contacter ?"
+

@@ -1,0 +1,20 @@
+/**
+ *	commons.css
+ *	Common styles used in the admin panel and overriding the default one
+ **/
+
+/* Buttons */
+button, .button { background-color:#2DAEBF; color:#FFFFFF; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; text-shadow:0 0px 3px rgba(0,0,0,0.25);}
+button:hover, button:focus, .button:hover, .button:focus { background-color:#3dc0d1; }
+	/* Action buttons */
+	button.action, .button.action { background-color:#d8d8d8; color:#333333; text-shadow:0px 0px 3px rgba(255,255,255,0.9); }
+	button.action:hover, .button.action:hover { background-color:#d0d0d1; }
+	/* Important buttons */
+	button.important, .button.important {  background-color:#b82b16; }
+	button.important:hover, .button.important:focus { background-color:#cd2f18; }
+
+/* Back button */
+a.back:before {  content: "\25C0"; padding-right:5px; }
+
+
+

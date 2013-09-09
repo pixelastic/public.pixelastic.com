@@ -1,0 +1,1 @@
+<?php	/**	 *	Error message	 **/	echo $this->Fastcode->message($message, 'error');

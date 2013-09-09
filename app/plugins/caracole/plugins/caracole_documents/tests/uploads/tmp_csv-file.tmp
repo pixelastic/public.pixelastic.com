@@ -1,0 +1,2 @@
+"name","email","alias","homeAddress","workAddress","homePhone","workPhone","cellPhone","fax","title","company","notes","pgpPublicKey","smimePublicKey","freebusyUrl"
+"John","john@doe.fr",,,"16 Rue des Ursulines 93200 SAINT DENIS",,"4815162342",,"4815162342",,"John","blah",,,

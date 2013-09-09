@@ -1,0 +1,73 @@
+/**
+ *	Debug toolbar
+ *	Displayed in the top right corner of the window when debug is enabled
+ **/
+#debug-kit-toolbar { position: fixed;  top: 0px; right:0px; overflow: visible; z-index:500000;  }
+#debug-kit-toolbar li.panel-tab > a { color:#16AEC5; text-decoration:none; }
+#debug-kit-toolbar #panel-tabs { float: right; list-style: none; margin: 0; overflow:hidden; border-bottom-left-radius:5px; -moz-border-radius-bottomleft:5px; -webkit-border-bottom-left-radius:5px;	box-shadow:1px 1px 3px rgba(0,0,0,0.8); -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.8); -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.8);}
+#debug-kit-toolbar li.panel-tab { float: left; margin: 0; padding: 0; list-style: none; }
+#debug-kit-toolbar li.panel-tab > a { float: left; border-left:1px solid rgba(255, 255, 255, 0.5); border-right:1px solid rgba(127, 127, 127, 0.25); display:block; height:30px; line-height:30px; padding:0 10px; background:#EBF7F9; }
+#debug-kit-toolbar li.panel-tab > a .icon { margin-top:-2px; }
+#debug-kit-toolbar li.panel-tab .active { background:#FFFFFF; }
+#debug-kit-toolbar li.panel-tab > a:hover { text-decoration:none; background:#72D4E3; border-color:#72D4E3; color:#FFFFFF; }
+/* First */
+#debug-kit-toolbar li.panel-tab:first-of-type > a { border-left:none; border-bottom-left-radius:5px; -moz-border-radius-bottomleft:5px; -webkit-border-bottom-left-radius:5px; }
+#debug-kit-toolbar li.panel-tab:first-of-type > a .icon { margin-top:4px; }
+
+/* panel content */
+#debug-kit-toolbar .panel-content { position: absolute; text-align: left; width: auto; top:30px; right:0px; background: #fff; color: #000; width:100%; box-shadow:1px 9px 5px rgba(0,0,0,0.2); -moz-box-shadow:1px 9px 5px rgba(0,0,0,0.2); -webkit-box-shadow:1px 9px 5px rgba(0,0,0,0.2); border-bottom-left-radius:10px; -moz-border-radius-bottomleft:10px; -webkit-border-bottom-left-radius:10px;}
+#debug-kit-toolbar .panel-resize-region { overflow:auto; position:relative; height:99%; max-height:550px; padding:15px; }
+#debug-kit-toolbar .panel-resize-handle { display:none; }
+
+/* Hide panel content by default */
+#debug-kit-toolbar .panel-content { display: none; }
+#debug-kit-toolbar h1, #debug-kit-toolbar h2, #debug-kit-toolbar h3, #debug-kit-toolbar h4, #debug-kit-toolbar h5 { color: #333333; margin:0.6em 0px 0.6em 0px;	background:none; }
+
+/* Tables */
+#debug-kit-toolbar table.debug-table  { color:#444; border:0px; padding:0px; border-collapse:separate; box-shadow:1px 3px 2px rgba(0,0,0,0.5); -moz-box-shadow: 1px 3px 2px rgba(0,0,0,0.5);-webkit-box-shadow: 1px 3px 2px rgba(0,0,0,0.5); border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
+#debug-kit-toolbar table.debug-table  th, #debug-kit-toolbar table.debug-table  td { border:0px; height:30px; line-height:30px; padding:0px 0.8em;}
+/* Header */
+#debug-kit-toolbar table.debug-table tr:first-of-type th { background:#a5948a; color:#FFFFFF; white-space:nowrap; }
+#debug-kit-toolbar table.debug-table tr:first-of-type th:hover { background:#775f51; }
+#debug-kit-toolbar table.debug-table tr:first-of-type th:first-of-type { border-top-left-radius:10px; -moz-border-radius-topleft:10px; -webkit-border-top-left-radius:10px; }
+#debug-kit-toolbar table.debug-table tr:first-of-type th:last-of-type { border-top-right-radius:10px; -moz-border-radius-topright:10px; -webkit-border-top-right-radius:10px; }
+/* Body */
+#debug-kit-toolbar table.debug-table tbody td { border-right:1px solid #e8e7e7; border-bottom:1px solid #e8e7e7;  }
+#debug-kit-toolbar table.debug-table tbody tr:hover td { background:#eeeeee; }
+#debug-kit-toolbar table.debug-table tbody tr:last-of-type td:first-of-type { border-bottom-left-radius:10px; -moz-border-radius-bottomleft:10px; -webkit-border-bottom-left-radius:10px;}
+#debug-kit-toolbar table.debug-table tbody tr:last-of-type td:last-of-type { border-bottom-right-radius:10px; -moz-border-radius-bottomright:10px; -webkit-border-bottom-right-radius:10px;}
+
+/* Neat Array styles */
+#debug-kit-toolbar .neat-array, #debug-kit-toolbar .neat-array li { list-style:none; list-style-image:none; }
+#debug-kit-toolbar .neat-array { padding: 1px 2px 1px 20px; background: #72D4E3; list-style: none; margin: 0 0 1em 0; }
+#debug-kit-toolbar .neat-array .neat-array { padding: 0 0 0 20px; margin:0; border-top:1px solid #72D4E3; }
+#debug-kit-toolbar .neat-array li { background: #EBF7F9; border-top: 1px solid #72D4E3; border-bottom: 1px solid #72D4E3; margin: 0;line-height: 1.5em; }
+#debug-kit-toolbar .neat-array li:hover { background: #FFFFFF; }
+#debug-kit-toolbar .neat-array li strong { padding: 0 8px; font-weight: bold; }
+#debug-kit-toolbar .neat-array li.expandable { cursor: pointer; }
+#debug-kit-toolbar .neat-array .expanded { border-bottom:0; }
+#debug-kit-toolbar .neat-array li.expandable.expanded > strong:before { content: 'v '; }
+#debug-kit-toolbar .neat-array li.expandable.collapsed > strong:before, #debug-kit-toolbar .neat-array li.expandable.expanded .expandable.collapsed > strong:before {	content: '> ';}
+#debug-kit-toolbar .neat-array li { cursor: default; }
+
+
+
+/* Graph bars */
+#debug-kit-toolbar .debug-kit-graph-bar, #debug-kit-toolbar .debug-kit-graph-bar-value { margin: 0; padding: 0px; border: none; height: 10px; }
+#debug-kit-toolbar .debug-kit-graph-bar { background-color: #ddd; padding:2px; margin-bottom:10px; position:relative; overflow:hidden;}
+#debug-kit-toolbar .debug-kit-graph-bar-value { background-color: #72D4E3; }
+#debug-kit-toolbar .debug-timers tr:hover .debug-kit-graph-bar-value:after { position:absolute; top:5px; left:0px; content:attr(title); font-size:0.8em; font-style:italic;}
+
+/* Sql Log */
+#sql_log-tab td, #sql_log-tab .slow-query-container p { font-family: Monaco, 'Consolas', "Courier New", Courier, monospaced; }
+#debug-kit-toolbar #sql_log-tab a.show-slow { display:block; margin: 3px; float:none; }
+#sql_log-tab .slow-query-container p { display:block; clear:both; margin: 20px 0 5px; }
+#debug-kit-toolbar #sql_log-tab a { background: none; border:none; }
+#sql_log-tab .slow-query { background:#e79302; font-size:9px; color:#fff; padding: 2px; white-space:nowrap; }
+#sql_log-tab input[type=submit] { border: 0; background: transparent; cursor: pointer; font-size: 12px; }
+
+/* previous panels */
+#debug-kit-toolbar .panel-history { display: none; background:#eeffff; }
+#debug-kit-toolbar #history-tab a { float: none; }
+#debug-kit-toolbar #history-tab a.active { background: #FEF6E5; }
+#debug-kit-toolbar #history-tab a.loading:after { content : ' Loading...'; font-style:italic; }

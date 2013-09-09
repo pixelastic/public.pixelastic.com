@@ -1,0 +1,11 @@
+/**
+ *	Blog admin styles
+ **/
+
+/* PostList */
+	table.itemList td.Post_publish_start { font-size:0.9em; width:180px; }
+/* Spam comments */
+	table.itemList a.isSpam { color:#CECECE; font-weight:bold; }
+
+/* Edit page */
+#PostAdminEditForm #PostText { height: 450px; }

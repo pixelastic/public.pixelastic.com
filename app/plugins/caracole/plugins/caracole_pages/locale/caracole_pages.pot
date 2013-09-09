@@ -1,0 +1,84 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-12-12 21:00+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \views\pages\home.ctp:7
+msgid "Welcome to Caracole. To overwrite this default page either create a new page with a slug of \"%1$s\", or create a %2$s file in %3$s"
+msgstr ""
+
+#: \views\admin\admin_home.ctp:3
+msgid "Admin panel"
+msgstr ""
+
+#: \views\admin\admin_home.ctp:6
+msgid "Welcome to Caracole"
+msgstr ""
+
+#: \models\page.php:23
+msgid "Page name"
+msgstr ""
+
+#: \models\page.php:26
+msgid "Text"
+msgstr ""
+
+#: \models\page.php:40
+msgid "You must specify the name of the page"
+msgstr ""
+
+#: \models\page.php:46
+msgid "Another page is using the same slug"
+msgstr ""
+
+#: \config\i18n.php:8
+msgid "Page"
+msgstr ""
+
+#: \config\i18n.php:9
+msgid "Pages"
+msgstr ""
+
+#: \config\i18n.php:10
+msgid "New page"
+msgstr ""
+
+#: \config\i18n.php:11
+msgid "Page \"%1$s\" added."
+msgstr ""
+
+#: \config\i18n.php:12
+msgid "Edit page"
+msgstr ""
+
+#: \config\i18n.php:13
+msgid "Page \"%1$s\" edited."
+msgstr ""
+
+#: \config\i18n.php:14
+msgid "Pages deleted."
+msgstr ""
+
+#: \config\i18n.php:15
+msgid "Pages restored."
+msgstr ""
+
+#: \config\i18n.php:16
+msgid "Pages destroyed."
+msgstr ""
+
+#: \config\i18n.php:17
+msgid "Pages reordered."
+msgstr ""
+

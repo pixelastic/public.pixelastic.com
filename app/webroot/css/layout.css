@@ -1,0 +1,90 @@
+/**
+ *	layout.css
+ *	This should contain the general styling of the website (mirroring markup in app/views/layout/default.ctp).
+ *	style.css should be used for the page-specific rules.
+ *
+ *	Note that this separation is not mandatory, but helps in organizing CSS content.
+ **/
+
+/* Basics */
+html { background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAFQCAMAAAA2v/asAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANJQTFRFHiYoHyYoHiUnFh0eHSUnFx4fICcpISgqGB8gLD5AL0FDGSEiBq/wMUNFHCQmGiIjFhweKjs9NUhKJzg6KTo8HCQlMEJEFx0fGyMkHiYnKz0/IikrGyMlGSAhHSUmIiorICgpDJ7WM0VHNEZIC5PINkhKJjg6KDk7ISkqJzk7GCAhMkVHLT9BMkRGKjw+Lj9BNUdJKDo7HycoM0ZINklLNEdJNEZJGiIkLkBCHSQmHCMlHycpGSAiGyIkICgqFh0fGiEjGB8hFx4gISkrIiosERschuj4YAAAATFJREFUeNrs1DV2xAAAA1GFmZmZmZmT+18pRdJusaPnOPZq+l9K+uIpNjY2NjY2NjY2NjY2NjY2NjY2th52iKdLnrZ4GudZ9pSnK56uedrg6YKndZ4OeDriWVtw7DTPsv08y97ydMLTIU99PMvO8yx7zNMYz7KTPMue8bTD0x5PEzzLbvOsHTl/tcbTIK80u8nTKM+yHbyWsy+82NhC7AzPsl28Stp3Xmzsv7O9vEraN15sbCF2n6clnmUfebGxDe0ArzT7youNLcSO8Cx7w9MTLza2oZ3lWXaRZ9l7XmzN7RTPssO80uwdL7YCdpln2U5ey9l2XmwTdo5n2fQ3tfFim7DnPD3wYmtuu3mVtKs8PfNiYwuxPbxK2l2ePnixsbG/doFn2RWePnmxsbE/fQswAHs8t5u18E2TAAAAAElFTkSuQmCC) top left repeat-x #232b2d; }
+	/* Image for IE6/7 */
+	html { background-image:url(../img/header.png) !ie6;}
+	*:first-child+html { background-image:url(../img/header.png);}
+
+body { color:#cecece; padding-bottom:1.6em; }
+/* Links */
+	a { color:#7FA5C9; text-decoration:none; }
+	a:hover { color:#FFFFFF; text-decoration:none; }
+/* Headings */
+	h2, h3, h4, h5 { font-weight:normal; font-family: 'Headings', sans-serif; color:#06AFF0; }
+	h2 a, h3 a, h4 a, h5 a { color:#06AFF0; }
+	h3 { border-bottom:1px solid #06AFF0; font-size:1.8em; line-height:1.2em; }
+	/* Fonts */
+		/* For IE */
+		@font-face { font-family: 'Headings'; font-weight: normal; font-style: normal; src: url('../fonts/TitilliumText400wt-webfont.eot'); }
+		/* For modern browsers */
+		@font-face { font-family:'Headings'; font-weight:normal; font-style:normal; src: local('☺'), url('../fonts/TitilliumText400wt-webfont.woff') format('woff'), url('../fonts/TitilliumText400wt-webfont.ttf') format('truetype'), url('../fonts/TitilliumText400wt-webfont.svg#webfont') format('svg');}
+
+
+
+
+
+
+/**
+ *	Header
+ *	Sitting on top of the page.
+ *	Contains the site title and main menu
+ **/
+.masthead { height:130px; margin-bottom:40px; position:relative; }
+.masthead h1 { margin:0px; width:285px; height:86px; }
+.masthead h1 a { display:block; position:relative; height:86px; line-height:86px;}
+.masthead h1 a span { position:absolute; top:25px; left:0px; width:285px; height:36px; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR0AAAAkCAMAAACDth6YAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtQTFRFaW91Zm1zxcXFrrCyw8PDhLPds7W2hrPchbTghLXgiLLchbLchLPfiLPgN0FMbHJ3rK6wtLW3N0JMwsLCZmxyr7GzxMTEaG91ERsc8bW/uQAAA+NJREFUeNrsmdmS4yAMRSWgPXvPasj/f+kYsQiQcNyZdE1SZR6o2I4F3ISjaxkuZ5s3OCV4WnU+v3w91Zm2Ty/fTnWm7eOHL6c6D86dECB2YTuOXcCQz5UWz6burg3jEOEdf6G8JhyGrcs9pM5q7Nb5tXRm6xa38iDe5+6+czcU1kyBzN2NzcblWLP2Z/Ny7VF13FKFWbIwqxnVcebe6sSIwbgpkLm7saWV+FEdWmlc87GdBfEPiGVTIW2v9p8Xr29fuPu+prAwBTJ3t25dWgkMe4hOhIAH1Tnb7NfDoBOKtKWrF0159cKA7lD/g6GBfbgP7PlerRODQ5wdzsaC/m7Mn4DgJHYmbc5IIOXCkkgnd633W1BvwrC/la7FGQjYD0CeoNl7zEM6GnfruuRBAy11SOKzV5bDU89xoAZ7hcUvM3VKTO2CdgcNYVzodaQEQXEWYv/1VDgAeYJmb6CsxeVP4F1OhJc8EKUWm9Bsr6mT41SpzesjcmcA8j+j+fTK76SOzN49fJGBCwK4Fc3p8PtwHTV0J58KefSbqIyHb0vWX3jlOC7mOdDFiVmBOV4aIwUCELShGT6GmOegMal7TCcWadwZ4Ds5rGw45gYJrf0cFvbKxGKjBwNG+2jCm/WT2+/VSaLaSjXbz3eK7sTJNN+sjpuWLCaHmaEH1LHxZ1hUr5znsCs1PCCQjx6eVP7PVAaE9sEqPXGRTZamFjRw61gPNQQ7ZBqKLhTPmioYb358w2rKB48bRlwD6pNrWI07fr3hDmNYQAMid8A74QuLz3aTrW1bN5gLB0vutojmt0bl/e6SkZNNLeRDs5lDiUeCpzVWoVFZX3b4OFGnTtkUnX7Uc62pRWFq1yqqGdXhtMBhLZ9LX0eRs6Y2uTPMJj1EtM724rb1EeBl8mjtuUjHjU1+DirvdyeVH6eCkQoVcLRcoIGtHg6WGK752WsVjLcWTZnUXd4AzSsXv64nnMKd5Cb3a6zS1A7gNm4d3eDk0X8/7KAJu8FDOinTdEtP0LYGs153g9MniU5s3SuzCXWpeoJKOtsN6zTYsyYMmkPF5VTFN36srwsq+4XfKqQ6kQnPwh0NvmcF42GpfA2f2OAuJKbhhLEoqhVsqNWhoEVp5QuDRiKHYf4HpGGW88KSIUJ6/yFTBvZxynKh24OHcLdfOW1d5+psW+vQb0zFZecHvjBoJJppDF8rD85krqL+4pANbzatdKJjLVnLGofCbvP6lbyy8Nq6Oqap0GjqmKCWMQoY9RvpbV9FaeULg0ai2VdNTE04Ea6Tt7Wr/5mn4dI65c/EiSs/pYQ4pden4s7plR+q/RVgANesi8orCCw0AAAAAElFTkSuQmCC) top left no-repeat; }
+	.ie-lt8 .masthead h1 a span { background-image:url(../img/logo.png); }
+	/* Menu */
+	.masthead .menu { height:39px; }
+	.masthead .menu li { padding:0px 0.4em;}
+	.masthead .menu li:first-child { padding-left:0px;}
+	.masthead .menu li a { outline:none; padding-right:40px; font-family: 'Headings',sans-serif; width:auto; display:block; color:#FFFFFF; font-size:1.6em; line-height:39px; height:39px; text-align:center; position:relative;}
+	.masthead .menu li a span { display:none; position:absolute; bottom:-25px; left:0px; font-size:0.8em; height:25px; line-height:25px; font-weight:normal; background:#06aff0; padding:0px 10px; white-space:nowrap;}
+	.masthead .menu li a:hover span, .masthead .menu li a:focus span { display:block; }
+		/* Do not display the span in IE6, they won't get hidden after */
+		.ie6 .masthead .menu li a:hover span, .ie6 .masthead .menu li a:focus span { display:none; }
+	/* Space invader */
+	.masthead .spaceinvader { cursor:pointer; overflow:hidden; position:absolute; top:0px; right:0px; height:70px; width:60px; margin-top:7px; opacity:0.5; }
+	.masthead .spaceinvader .pixel { width:10px; height:10px; float:left;}
+	.masthead .spaceinvader .pixel-on { background:#777777; }
+	.masthead .spaceinvader:hover { opacity:1; }
+	.masthead .spaceinvader:hover .pixel-on { background:#06aff0; }
+		/* IE6 dimension fix */
+		.ie6 .masthead .spaceinvader .pixel { font-size:0px; background:transparent;}
+		.ie6 .masthead .spaceinvader .pixel-on { background:#777777; }
+
+	/* Quote */
+	.masthead blockquote { position:absolute; top:90px; right:0px; font-size:0.8em; color:#CECECE; text-align:right; }
+		.ie-lt8 .masthead blockquote { top:88px;}
+	.masthead blockquote cite { display:block;}
+		/* Horde du Contrevent quote in french */
+		  html[lang=fr] .masthead blockquote cite:before { content: "¿´"; font-weight:bold; margin-right:5px; }
+
+/**
+ *	Sidebar
+ **/
+.blogSecondary h3 ~ h3 { margin-top:1.6em; }
+
+/* Search form */
+.searchForm { margin-bottom:1.6em; overflow:hidden; }
+.searchForm label { display:none; }
+.searchForm .input, .searchForm button { float:left; }
+.searchForm input { width:300px; margin-right:10px; }
+.searchForm .archive { font-size:0.9em; clear:both; }
+.blogSecondary .searchForm input { width:120px; }
+
+/* RSS link */
+a.rss { padding-left:40px; height:32px; line-height:32px; display:block; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABV0RVh0Q3JlYXRpb24gVGltZQA2LzI0LzA59sFr4wAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNAay06AAAATzSURBVFiFvZd7bBRVFMZ/d2Z21+6DPtnadktjhNoUSEyICVE0hBgS5CHhYULER8QYIDFRgwZMQBINEOA/o/ggYtRECokPRImKRKLBiClRobXyEArdbktb6Ha3+5jdnesfs4+Z1rYUCyc52Tt7zr3z3e87595dgcVCu9gmJU9ISYBbYELQIQQfV73Mq/nvcoPgDs4ImO6rasBVUgeae2Lfno6R7G8nEmpDQkvNRmbkAQS3sx3Y6G+YhxbvhOhlSMcmFoDmBu8U0kXVXG07BrCjZhObFIBMmtU+fwNaTzNcawM9BgYT63oMrrWh9TTj8zeQSbMaQAMwMgScpCARBuDShQJwpws0DdweuKPIHP8vS4RxeiowMmadaQBSgisRAmnmTHnpx3y+3nOB9EAX8fM/cf3KH6iJEJOKweu7eQyuRAiZfZcJIINJUc6Emh86/fU4/fW4pz6UBXSeSPMB+tuOUFIKXu9NINBj5jsBBUAO1UvRRnRnZQPlj2yhcs3nxP0L6eqEtM64a0IaFgCGgUl/1oWqFFxRQFFBKDZXS6opX7SF4mXv0B2tIjZoX2MsNwyrBDlkOQW+X28OHD4oq0dMmQul05CSvHY5c9XNovKZT+k79BpG3/EbliTHgAD4ewOyvmKMGd5qmLYYGh9HOrzDgAD0HtqKu+MQXs/YAM72wj27EaYEGcbWbaATmt+FpoWI399HZOLD6qNi6RvEAo+acoyxnmErwiH6XLxsensHdPdAJJqdIIFkBJr3IA6vQVw/h1BUs0ayXrFsG1H/PNIpRq2BHIMCoOV5ZKO/QI+xrg0AmYgQv3iSeOtREm1HmeSMUGzV2OWDBW8hq+5DFq4VZCJC33tL8TuCI0rQehWmv5mVYFgbChWEiigqwd04n/IVO6necJxU49MEuzB3ZwDxCHz2JIROIYRim+ddspNIdGQJRm9DRRnmiruY8iWbqVj/Nd16AF235B9eh+w7a8svuns2+tTlY7bhfzIghIrI7sb0Qv87axq584Uj9DoaLUwMoHz7ClKP2XJ9D784IgtyNAAcWAUHViFOfYiIdoHiAKHlXSkqoXLdQXqN2sKc7lbEqX22PEdZHemGx24AwFCK2n8x/YetsGc24thWSA3adqcUlVD61AeEoxYpftuL1O157geeJZ0eLkGuC27sHPh1L+KTFSYIS8s5AzPJzHoOI12QgpN77Tm1M0kW1Q5b0xjtMoon4FI3/NNlfsYTQOgM4qPlkIzZaC5esJEYxfm5yp9NtjhCIx2YM74aCPvnULu7nbvevk7t7nbC/uwCnacRx3fZdqh4SsnULyzMv3YFo+uvQo5Qcc5YPL42nLx2P6qnFKGoqJ5SJq/dX4if2IPRH0Qoat4dMxbbW6z1m3wMRUWtqBtfG6qeMhuFqqfMjr7liC3uaphrj3eesXdD4N7xSSD1qOUMUM1nawGd/soWV912gMTChVMxx8RYbTiQtLTTvpWgR00N9aj5bKHPqQlbHaCoo8Szt6UlPpAcchmdWElnYJKjqtad4nbYlZiDjoFU6P6DVCsAGjQFwykGkwyjaqJ9MAnBcAoNmsBkQADaz0tpEYJpNR4ocUGxc2J3HdahPwnBQTAk5x78gulAWgAOwAc4vlvE6y6VR6XEP/pyN2dCcDWZ4cv5h9kMpICIDQCWP6u32KQVgMD8dZwb3y4AEkj/C23kxalEjldyAAAAAElFTkSuQmCC) top left no-repeat;  }
+	.ie-lt8 a.rss { padding-left:0px; background:none; }
+
+/* Recent comments */
+.commentRecent { margin-left:0.8em; list-style:none; }
+.commentRecent li { overflow:hidden; height:20px; line-height:20px; }
+.commentRecent img { float:left; margin-right:5px; }

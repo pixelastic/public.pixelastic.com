@@ -1,0 +1,8 @@
+/**
+ *	error.css
+ *	Displaying simple error messages when missing view, component, and so on
+ **/
+body { padding:1.6em; }
+h2{margin:0px 0px 0.8em 0px;}
+.notice, .error { color:#FFFFFF; padding:0.4em;}
+pre { background:#CECECE; margin-top:0.8em; }

@@ -1,0 +1,219 @@
+/**
+ *	common.css
+ *	Common CSS utility classes that can be used in any application
+ **/
+
+/**
+ * Convenient classes for hiding/showing elements based on Javascript enabled or not
+ * Elements with jsOn will be visible only if Javascript is enabled, hidden otherwise
+ * Elements with jsOff will be visible only if Javascript is disabled, hidden otherwise
+ **/
+.jsOn, .js .jsOff { display:none; }
+.jsOff, .js .jsOn { display:block; }
+
+
+/**
+ * Wrapper and Clearfix
+ * Wrapper : Used on a container to force its inner floats to be in the flow
+ * Clearfix : Idem
+ * Clear : Will clear previous elements
+ **/
+.wrapper { overflow:hidden; }
+	.ie6 .wrapper { zoom:1; }
+.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+	.ie .clearfix, .ie .container {display:inline-block;}
+	.ie6 .clearfix, .ie6 .container {height:1%;}
+.clear {clear:both;}
+
+/**
+ * .protectedMail
+ * Helps in displaying a plain text email adress as something more readable
+ * We hide the text content and add the character using after. Opera and Firefox understands a font-size:0px
+ * while webkit understands a letter-spacing:-9999px, so we'll have to resort to hacky selectors.
+ **/
+.protectedMail {}
+body:only-of-type.nie .protectedMail .mailChar { font-size:0px; }
+body:only-of-type.nie .protectedMail .mailChar:after { content:attr(title); font-size:12px; }
+	/* For webkit only */
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		body:only-of-type .protectedMail .mailChar { font-size:12px; letter-spacing:-9999px;}
+		body:only-of-type .protectedMail .mailChar:after { letter-spacing:0px; }
+	}
+
+
+
+
+
+
+
+/**
+ * .tablecell
+ * Convenient class used to display a <ul> as a menu-like element. Each item is placed side by side and content is vertically
+ * centered.
+ **/
+.tablecell { list-style:none; margin:0px; display:table; }
+.tablecell li { display:table-cell; vertical-align:middle; padding:0px 10px; margin:0px; }
+	/* IE7 */
+	.ie7 .tablecell { overflow:hidden;  }
+		.ie7 .tablecell li { float:left; }
+	/* IE6 */
+	.ie6 .tablecell { zoom:1; }
+		/* We simulate inline-block and hardcode a width for ie6. It will be extended if too small as IE6 do not correctly handle width */
+		.ie6 .tablecell li { float:left; white-space:nowrap; display:block; width:1px; }
+
+/**
+ * .inline
+ * Convenient class used to display a <ul> as an inline list, separating each item with a pipe
+ **/
+.inline { list-style:none; display:inline; margin:0px; }
+.inline li { display:inline; }
+.inline li:before { content:" | "; }
+.inline li:first-child:before { content:""; }
+	.ie-lt8 .inline li { padding-right:5px; }
+
+/**
+ *	.definitionList
+ *	Displays a definition list as a list of pairs key/values
+ **/
+.definitionList { overflow:hidden; }
+.definitionList dt { float:left; clear:both; }
+.definitionList dd { float:left; padding-left:5px; }
+	.ie-lt8 .definitionList dd { float:none; }
+
+
+/**
+ *	Paginate links
+ *	Previous/Next links, current page and page list
+ **/
+.paginate {	text-align:center; }
+.paginate span { display:inline-block; margin:0px 3px; }
+.paginate span a { padding:2px 5px; display:inline-block; }
+.paginate .current { color:#cecece; font-weight:bold; padding:3px 5px; }
+.paginate .prevDisabled, .paginate .nextDisabled { padding:2px 5px; }
+.paginate a.prev:before, .paginate .prevDisabled:before { content:"\25C0"; padding-right:5px; }
+.paginate a.next:after, .paginate .nextDisabled:after { content:"\25B6"; padding-left:5px; }
+	/* IE can't display special UTF-8 */
+	.ie .paginate a.prev:before, .ie .paginate .prevDisabled:before, .ie .paginate a.next:after, .ie .paginate .nextDisabled:after { content:""}
+
+/**
+ *	Messages
+ *	Error, Success, Notice messages
+ **/
+.message { margin:10px 3px 20px 3px; padding:10px; color:rgba(255,255,255,0.9); background:#6894c1; text-shadow: 0px 0px 3px rgba(0,0,0,0.5);  -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.5); box-shadow: 1px 1px 1px rgba(0,0,0,0.5); -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.5);}
+.message h3 { font-family:inherit; height:auto; border:none; color:#FFFFFF; font-size:1em; line-height:1em; margin:0px; font-weight:bold;}
+.message a { color:#FFFFFF; }
+.message a:hover { text-decoration:underline; }
+.message li { margin-bottom:5px; }
+	.message.error { background:#b82b16; }
+	.message.success { background:#5b9524; }
+	.message.notice { background:#987B0C; }
+	.message.information { background:#6894c1; }
+	/* Forcing white text on IE */
+	.ie .message ul { color:#FFFFFF; }
+
+
+
+
+/**
+ *	Nice form
+ *	A convenient method to add to a <form> that will improve its rendering.
+ *	Uses some advanced selectors, so will try our best to gracefully degrade
+ *	Browsers that don't support :before/:after do not support :only-of-type either, so will filter them out that way
+ **/
+.niceForm {}
+.niceForm .input { padding-bottom:10px; position:relative; }
+	/* Forcing layout, and forcing no background -could cause red background on error- */
+	.ie6 .niceForm .input { zoom:1; background:none;}
+.niceForm label, .niceForm .label { float:left; width:120px; text-align:right; margin-right:10px; }
+.niceForm input[type=text], .niceForm input[type=password] { width:320px; }
+.niceForm textarea { width:450px; height:280px; }
+.niceForm select { max-width:330px; }
+	/* Dummy field : Should not be displayed, we only need its markup in the source */
+	.niceForm .input.dummy { display:none; }
+
+	/* Required */
+	.niceForm .input .iconRequired { position:absolute; left:435px; top:-6px; }
+
+	/* Help */
+	.niceForm .help { cursor:help; position:absolute; top:15px; right:10px; }
+	.niceForm .help .tooltip { position:absolute; width:320px; padding:5px; top:0px; right:30px; background:#6894c1; color:#FFFFFF; display:none; z-index:500; }
+	.niceForm .help:hover .tooltip { display:block;}
+
+	/* Error fields */
+	.niceForm .input.error { background:inherit; }
+	.niceForm .error label, .niceForm .error .label {color:#A51919; font-weight:bold; }
+	.niceForm input.form-error[type=text], .niceForm input.form-error[type=password], .niceForm textarea.form-error {border:1px solid #C25454; color:#A51919; background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAExJREFUeNrs09ENACAIQ0FBEN1/CKdyF6d4HyTtAJeGUHv3DiY+sIRnUvRci6Jjb4w+pyE9wdZVDZ/PsMmQa2zZWgcRLVq06B70F2AA+s8DDi4A7A8AAAAASUVORK5CYII=); background-color:#FAE1E1; }
+	.niceForm select.form-error { background-color:#FAE1E1; border:1px solid #C25454; color:#A51919; }
+	.niceForm .form-error:focus,.niceForm .form-error:target  {box-shadow:0 0 3px #B82B16 inset; -webkit-box-shadow:0 0 3px #B82B16 inset; -moz-box-shadow:0 0 3px #B82B16 inset;}
+	.niceForm .error-message {clear:both; padding:0px 0px 0px 130px; font-size:11px; color:#A51919; font-style:italic;}
+
+
+	/* Checkbox */
+	.niceForm .checkbox input { margin-left:130px; }
+	.niceForm .checkbox label { float:none; width:auto; text-align:left; margin:0px 0px 0px 10px; }
+	.niceForm .checkbox label:after { content:""; }
+		/* Improved checkbox */
+		body:only-of-type .niceForm .checkbox input[type=checkbox] { position:absolute; left:-999999px;	top:0px;}
+		body:only-of-type .niceForm .checkbox label { position:relative; padding-left:30px; margin-left:130px; height:25px; line-height:25px; display:inline-block;}
+		body:only-of-type .niceForm .checkbox label:before { position:absolute; top:0px; left:0px; width:25px; height:25px; content:" "; background:url(../img/input-sprite.png) -25px 0px no-repeat;}
+		body:only-of-type .niceForm .checkbox label:hover:before, body:only-of-type .niceForm .checkbox input:focus + label:before { background-position:-25px -25px; }
+		body:only-of-type .niceForm .checkbox label:active:before { background-position:-25px -50px; }
+		body:only-of-type .niceForm .checkbox input:checked + label:before { background-position:-25px -75px; }
+		body:only-of-type .niceForm .checkbox input:checked + label:hover:before, body:only-of-type .niceForm .checkbox input:checked:focus + label:before { background-position:-25px -100px; }
+		body:only-of-type .niceForm .checkbox input:checked + label:active:before { background-position:-25px -125px; }
+	/* Multiple checkboxes */
+		.niceForm .checkboxMultiple .checkboxText { display:none; }
+		.niceForm .checkboxMultiple .checkboxes { position:relative; }
+		.niceForm .checkboxMultiple label { float:left;clear:both; }
+
+	/* Radio buttons */
+	.niceForm .radio { overflow:hidden; }
+	.niceForm .radio .radios { float:left; position:relative; }
+	.niceForm .radio input { float:left; margin-top:8px; }
+	.niceForm .radio label { width:auto; padding-left:5px; }
+	.niceForm .radio label:after { content:"";}
+		/* Align in IE */
+		.ie .niceForm .radio .radios { margin-top:-5px; }
+		.ie .niceForm .radio label { margin-top:5px; }
+		/* Improved radio **/
+		body:only-of-type .niceForm .radio input[type=radio] { position:absolute; left:-999999px; top:0px;}
+		body:only-of-type .niceForm .radio label { padding-left:30px; position:relative; height:25px; line-height:25px;}
+		body:only-of-type .niceForm .radio label:before { position:absolute; top:0px; left:0px; width:25px; height:25px; content:" "; background:url(../img/input-sprite.png) 0px 0px no-repeat;}
+		body:only-of-type .niceForm .radio label:hover:before, body:only-of-type .niceForm .radio input:focus + label:before { background-position:0px -25px; }
+		body:only-of-type .niceForm .radio label:active:before { background-position:0px -50px; }
+		body:only-of-type .niceForm .radio input:checked + label:before { background-position:0px -75px; }
+		body:only-of-type .niceForm .radio input:checked + label:hover:before, body:only-of-type .niceForm .radio input:checked:focus + label:before { background-position:0px -100px; }
+		body:only-of-type .niceForm .radio input:checked + label:active:before { background-position:0px -125px; }
+
+	/* Multiple select */
+	.niceForm select[multiple] { width:320px; }
+
+	/* Editor */
+	.js .niceForm .editor { overflow:hidden; min-height: 280px; }
+	.js .niceForm .editor textarea { opacity:0.3; position:absolute; }
+
+	/* Datefield */
+	.niceForm .date input { width:80px; }
+
+	/* Datetime */
+	.niceForm .datetime .dateSplit { display:none;}
+		/* With Javascript we split the date in two fields */
+		.niceForm .datetime .dateFull { display:none; }
+		.niceForm .datetime .dateSplit { display:inline-block; }
+			.niceForm .datetime .date { width:80px; margin-right:10px; }
+			.niceForm .datetime .time { width:40px; margin-left:10px; }
+
+	/* Plain values */
+	.niceForm .plain { overflow:hidden; }
+	.niceForm .plainValue { float:left; max-width:320px; line-height:30px; white-space:pre-wrap; overflow:hidden;}
+		/* Radio values */
+		.niceForm .plain .radios label { display:none;}
+		/* Checkboxes values */
+			body:only-of-type .niceForm .plain.checkbox label { float:left; width:120px; text-align:right; margin:0px 10px 0px 0px; }
+			body:only-of-type .niceForm .plain.checkbox label:after { content:" :"; }
+			body:only-of-type .niceForm .plain.checkbox label:before { display:none; }
+
+	/* Submit buttons */
+	.niceForm .submit { overflow:hidden; text-align:right; padding:10px;}
+	.niceForm .back { float:left; }

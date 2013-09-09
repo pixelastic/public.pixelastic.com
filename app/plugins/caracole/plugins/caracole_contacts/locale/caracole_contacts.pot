@@ -1,0 +1,86 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-10-16 16:38+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \views\elements\email\text\contact.ctp:1
+#: \views\elements\email\html\contact.ctp:2
+msgid "You have received a contact request :"
+msgstr ""
+
+#: \views\elements\email\text\contact.ctp:4
+#: \views\elements\email\html\contact.ctp:6
+#: \views\contacts\add.ctp:23
+#: \models\contact.php:18;41
+msgid "Name"
+msgstr ""
+
+#: \views\elements\email\text\contact.ctp:7
+#: \views\elements\email\html\contact.ctp:10
+#: \views\contacts\add.ctp:32
+#: \models\contact.php:44
+msgid "Email"
+msgstr ""
+
+#: \views\elements\email\text\contact.ctp:10
+#: \views\elements\email\html\contact.ctp:13
+#: \views\contacts\add.ctp:39
+#: \models\contact.php:47
+msgid "Message"
+msgstr ""
+
+#: \views\contacts\add.ctp:7
+msgid "Contact"
+msgstr ""
+
+#: \views\contacts\add.ctp:33
+msgid "Will not be published, but needed to contact you back."
+msgstr ""
+
+#: \views\contacts\add.ctp:46
+msgid "Send"
+msgstr ""
+
+#: \views\contacts\add_ok.ctp:8
+msgid "Thank you"
+msgstr ""
+
+#: \views\contacts\add_ok.ctp:13
+msgid "Thank you for your message, we'll come back to you as fast as possible."
+msgstr ""
+
+#: \models\contact.php:19
+msgid "Mail"
+msgstr ""
+
+#: \models\contact.php:58
+msgid "You have to type your name."
+msgstr ""
+
+#: \models\contact.php:64
+msgid "You have to type your email if you want me to contact you back."
+msgstr ""
+
+#: \models\contact.php:68
+msgid "This email does not seem to be valid."
+msgstr ""
+
+#: \models\contact.php:74
+msgid "Haven't you something to say ?"
+msgstr ""
+
+#: \config\config.php:22
+msgid "%1$s : You have received a contact request"
+msgstr ""
+

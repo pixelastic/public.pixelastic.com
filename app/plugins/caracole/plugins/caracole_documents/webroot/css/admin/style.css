@@ -1,0 +1,12 @@
+/**
+ *	js.css
+ *	Use the admin sprite for the upload progress bar
+ **/
+
+.js .dynamicUpload .barHolder, .js .dynamicUpload .bar, .js .dynamicUpload .percent,
+.js body:only-of-type .dynamicUpload .barHolder:before, .js body:only-of-type .dynamicUpload .barHolder:after,
+.js body:only-of-type .dynamicUpload .percent:after { background-image:url(../img/caracole/input-sprite.png); }
+
+/* Images index */
+.adminImagesIndex .itemList .Image_preview { width:100px; text-align:center; padding:0px; width:110px; }
+.adminImagesIndex .itemList tbody .Image_preview a { height:auto; padding:0px; }
