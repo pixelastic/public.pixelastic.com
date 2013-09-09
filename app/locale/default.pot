@@ -1,0 +1,445 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-07-22 16:27+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /webroot/test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+#: /config/i18n.php:12
+#: /config/config.php:244
+#: /views/pixelastic_contacts/add.ctp:5
+#: /views/pixelastic_contacts/add_ok.ctp:10
+#: /views/layouts/default.ctp:57
+msgid "Contact"
+msgstr ""
+
+#: /config/i18n.php:13
+msgid "contacts"
+msgstr ""
+
+#: /config/i18n.php:14
+#: /config/config.php:246
+msgid "New contact"
+msgstr ""
+
+#: /config/i18n.php:15
+msgid "Edit contact"
+msgstr ""
+
+#: /config/i18n.php:16
+msgid "Contact \"%1$s\" added"
+msgstr ""
+
+#: /config/i18n.php:17
+msgid "Contact \"%1$s\" edited"
+msgstr ""
+
+#: /config/i18n.php:18
+msgid "Contact \"%1$s\" deleted"
+msgstr ""
+
+#: /config/i18n.php:19
+msgid "Contact \"%1$s\" restored"
+msgstr ""
+
+#: /config/i18n.php:20
+msgid "Contact \"%1$s\" destroyed"
+msgstr ""
+
+#: /config/i18n.php:21
+msgid "Contacts reordered"
+msgstr ""
+
+#: /config/config.php:16
+msgid "Pixelastic"
+msgstr ""
+
+#: /config/config.php:17
+msgid "Freelance web developer"
+msgstr ""
+
+#: /config/config.php:180
+#: /views/layouts/default.ctp:34
+msgid "Blog"
+msgstr ""
+
+#: /config/config.php:195
+msgid "Works"
+msgstr ""
+
+#: /config/config.php:200
+msgid "Pages"
+msgstr ""
+
+#: /config/config.php:205;245
+msgid "Contacts"
+msgstr ""
+
+#: /config/config.php:247
+msgid "Contact \"%1$s\" added."
+msgstr ""
+
+#: /config/config.php:248
+msgid "Contact \"%1$s\" edited."
+msgstr ""
+
+#: /config/config.php:249
+msgid "Contact \"%1$s\" deleted."
+msgstr ""
+
+#: /config/config.php:250
+msgid "Contact \"%1$s\" restored."
+msgstr ""
+
+#: /config/config.php:251
+msgid "Contact \"%1$s\" destroyed."
+msgstr ""
+
+#: /config/config.php:252
+msgid "Contacts reordered."
+msgstr ""
+
+#: /config/config.php:260
+msgid "Pixelastic - Blog"
+msgstr ""
+
+#: /config/config.php:261
+msgid "Weblog of Timothée Carry-Caignon. Posting on all things web-development, back-end to front-end."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:32
+#: /views/elements/email/text/contact.ctp:4
+#: /views/elements/email/html/contact.ctp:6
+#: /models/work.php:25
+msgid "Name"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:41
+#: /views/elements/email/text/contact.ctp:7
+#: /views/elements/email/html/contact.ctp:13
+msgid "Email"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:42
+msgid "Will not be published, but I need it to contact you back."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:48
+msgid "This contact is regarding a specific project"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:54
+msgid "Project details"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:57
+#: /views/elements/email/text/contact.ctp:12
+#: /views/elements/email/html/contact.ctp:21
+#: /models/pixelastic_contact.php:21
+msgid "Timeframe"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:60
+msgid "Yesterday"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:60
+msgid "This is really urgent. In fact it should already be finished !"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:61
+msgid "This week"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:61
+msgid "This is pretty urgent, I need it ASAP."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:62;67
+msgid "This month"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:62
+msgid "We have a set deadline, and it need to be done by then."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:63
+msgid "In a couple of months"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:63
+msgid "I'm not in a particular hurry, but the sooner the better."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:64
+msgid "In 6 months"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:64
+msgid "There is no immediate need, but planning ahead doesn't hurt."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:65
+msgid "Someday"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:65
+msgid "I have absolutely no pressure, I just want to ask some general questions."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:68
+msgid "When should the project be finished, ideally ?"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:73
+#: /views/elements/email/text/contact.ctp:13
+#: /views/elements/email/html/contact.ctp:22
+#: /models/pixelastic_contact.php:24
+msgid "Budget"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:76
+msgid "No idea"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:76
+msgid "I have absolutely no idea, you tell me !"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:77
+msgid "Nothing"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:77
+msgid "I think my idea is so great you'll want to do it for free !"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:78
+msgid "~500€"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:78
+msgid "I just want you to code some HTML/CSS for me."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:79;84
+msgid "~1000€"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:79
+msgid "I need a small website, a dozen pages or so, nothing fancy."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:80
+msgid "~3000€"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:80
+msgid "I need a custom website with some special features."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:81
+msgid "~6000€"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:81
+msgid "I need a pretty big website and have some strong requirements."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:82
+msgid "10000€ and more"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:82
+msgid "I'll ask you to do something that have never been done before."
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:85
+msgid "How much are you willing to invest in the project, approximatively ?"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:92
+#: /views/elements/email/text/contact.ctp:16
+#: /views/elements/email/html/contact.ctp:26
+msgid "Message"
+msgstr ""
+
+#: /views/pixelastic_contacts/add.ctp:99
+msgid "Send message"
+msgstr ""
+
+#: /views/pixelastic_contacts/add_ok.ctp:22
+msgid "Thank you for your message, I'll strive to answer to every mail I get, so expect a fast answer !"
+msgstr ""
+
+#: /views/elements/contact_sidebar.ctp:5
+msgid "Who am I ?"
+msgstr ""
+
+#: /views/elements/contact_sidebar.ctp:8
+msgid "My name is <strong>Timothée Carry-Caignon</strong>, I'm %1$s and living in Paris, France"
+msgstr ""
+
+#: /views/elements/contact_sidebar.ctp:12
+msgid "What do I do ?"
+msgstr ""
+
+#: /views/elements/contact_sidebar.ctp:15
+msgid "I'm passionate about all things web-development from front-end to back-end and I build great websites for a living."
+msgstr ""
+
+#: /views/elements/contact_sidebar.ctp:19
+msgid "How to contact me ?"
+msgstr ""
+
+#: /views/elements/contact_sidebar.ctp:22
+msgid "I have no Facebook page but sometime tweet. If you want to contact me, the easiest way is to send a mail (tim@*domain-of-this-website*.com) or use the form on this page."
+msgstr ""
+
+#: /views/elements/email/text/contact.ctp:1
+#: /views/elements/email/html/contact.ctp:2
+msgid "You have received a contact request :"
+msgstr ""
+
+#: /views/layouts/default.ctp:34
+msgid "bits of code"
+msgstr ""
+
+#: /views/layouts/default.ctp:42
+#: /views/works/index.ctp:7
+msgid "Work"
+msgstr ""
+
+#: /views/layouts/default.ctp:42
+msgid "missions completed"
+msgstr ""
+
+#: /views/layouts/default.ctp:49
+msgid "About"
+msgstr ""
+
+#: /views/layouts/default.ctp:49
+msgid "more about me"
+msgstr ""
+
+#: /views/layouts/default.ctp:57
+msgid "come and say Hello"
+msgstr ""
+
+#: /views/layouts/default.ctp:69
+msgid "You can clip our wings but we will always remember what it was like to fly."
+msgstr ""
+
+#: /views/works/index.ctp:17
+msgid "Please, enjoy a selection of the latests projects I've been involved with and that I'm proud to show to the whole world."
+msgstr ""
+
+#: /views/works/index.ctp:18
+msgid "Each project is different and each client has its own needs, so it will be a fairly reasonable representation of what I'm able to do."
+msgstr ""
+
+#: /views/pages/about.ctp:24
+msgid "What I can do..."
+msgstr ""
+
+#: /views/pages/about.ctp:28
+msgid "10 years experience of website building with PHP"
+msgstr ""
+
+#: /views/pages/about.ctp:29
+msgid "Clean and simple HTML/CSS"
+msgstr ""
+
+#: /views/pages/about.ctp:30
+msgid "Unobstrusive Javascript. Vanilla, jQuery or Backbone"
+msgstr ""
+
+#: /views/pages/about.ctp:35
+msgid "What I'd like to do..."
+msgstr ""
+
+#: /views/pages/about.ctp:39
+msgid "Teach and learn as part of a team"
+msgstr ""
+
+#: /views/pages/about.ctp:40
+msgid "Learn more of Ruby and/or node"
+msgstr ""
+
+#: /views/pages/about.ctp:41
+msgid "Working on one big project, fixing and improving it"
+msgstr ""
+
+#: /views/pages/about.ctp:42
+msgid "TDD workflow and git as a team tool"
+msgstr ""
+
+#: /views/pages/about.ctp:47
+msgid "I'd love to work for you if..."
+msgstr ""
+
+#: /views/pages/about.ctp:51
+msgid "Your project is challenging"
+msgstr ""
+
+#: /views/pages/about.ctp:52
+msgid "Your project as a social dimension"
+msgstr ""
+
+#: /views/pages/about.ctp:53
+msgid "Your project as a gaming dimension"
+msgstr ""
+
+#: /views/pages/about.ctp:58
+msgid "I'd hate to work for you if..."
+msgstr ""
+
+#: /views/pages/about.ctp:62
+msgid "You need pixel-perfect compatibility"
+msgstr ""
+
+#: /views/pages/about.ctp:63
+msgid "You need to interface with Facebook API"
+msgstr ""
+
+#: /views/pages/about.ctp:64
+msgid "You do not use a versioning system"
+msgstr ""
+
+#: /views/pages/home.ctp:37
+msgid "Welcome to Pixelastic"
+msgstr ""
+
+#: /models/work.php:26
+msgid "Url"
+msgstr ""
+
+#: /models/work.php:27
+msgid "Text"
+msgstr ""
+
+#: /models/work.php:28
+msgid "Date"
+msgstr ""
+
+#: /models/work.php:29
+msgid "Screen"
+msgstr ""
+
+#: /models/work.php:38
+msgid "You have to write the name of the work"
+msgstr ""
+

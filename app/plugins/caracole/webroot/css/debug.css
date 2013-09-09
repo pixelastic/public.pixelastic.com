@@ -1,0 +1,7 @@
+/**
+ *	debug.css
+ *	Only loaded when debug mode is set
+ **/
+#debugJavascriptPanel div { padding-bottom:0.8em; }
+table.cake-sql-log { display:none; }
+#swfUploadPanel .message { white-space:pre-wrap; }

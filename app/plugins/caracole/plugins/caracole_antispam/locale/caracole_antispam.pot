@@ -1,0 +1,28 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-06-23 22:32+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \views\helpers\antispam.php:20
+msgid "Spam bait"
+msgstr ""
+
+#: \views\helpers\antispam.php:21
+msgid "Leave this field empty, it is only here to defeat spam bots"
+msgstr ""
+
+#: \controllers\components\antispam.php:36
+msgid "You have to keep this field empty. If you fill it, I guess that you are a spam bot."
+msgstr ""
+

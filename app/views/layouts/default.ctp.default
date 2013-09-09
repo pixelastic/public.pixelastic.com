@@ -1,0 +1,31 @@
+<?php
+	/**
+	 *	default layout
+	 *	This file is used as a reference to a defaul layout that you can use.
+	 **/
+
+// Default CSS files
+$this->Packer->css(array(
+	'common',	//	Common styles reused accross pages
+	'layout',	//  Styling the main layout
+	'style',	//	Styling special pages
+));
+
+// Default Javascript files
+$this->Packer->js(array(
+	'init'		// Javascript initialization
+));
+
+//<!DOCTYPE><html><head>
+echo $this->element('html_head', array('plugin' => 'caracole'));
+//</head><body>
+
+?>
+
+	// Content
+	echo $content_for_layout;
+
+	echo $this->Packer->bottom();
+?>
+</body>
+</html>

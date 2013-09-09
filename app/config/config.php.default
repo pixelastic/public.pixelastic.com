@@ -1,0 +1,200 @@
+<?php
+/**
+ *	Default app settings.
+ *	This define your app settings. All settings defined here will overwrite default settings (both Cake and Caracole).
+ **/
+CaracoleConfigure::write(array(
+	/**
+	 *	Site
+	 *	General website informations
+	 *
+	 *	@name : 		Your site name. Used as the default site title
+	 *	@baseline : 	Your site baseline, used as the default meta description
+	 *	@id :			A unique string identifying your site. Used to keep various Caracole implementations apart.
+	 **/
+	'Site' => array(
+	   'name' 		=> __('Your site name', true),
+	   'baseline'	=> __("Your site baseline", true),
+	   //'id' 		=> 'yoursite',
+	   'id' 		=> 'caracole',
+   ),
+
+	/**
+	 *	Database
+	 *	Database connection credentials. You have to define two sets of credentials for both your development and
+	 *	production environment. Corresponding values will be picked accordingly.
+	 *
+	 *	Please refer to database.php for further details on the keys.
+	 **/
+   'Database' => array(
+	   'prod' => array(
+		   'default' => array(
+			'driver' 	=> 'mysql',
+			'persistent' => false,
+			'host' 		=> 'mysql.yoursite.com',
+			'port' 		=> '',
+			'login' 		=> 'yourlogin',
+			'password' 	=> 'yourpassword',
+			'database' 	=> 'yourdatabase',
+			'schema' 	=> '',
+			'prefix' 	=> '',
+			'encoding' 	=> 'utf8'
+		   )
+	   ),
+	   'dev' => array(
+		  'default' => array(
+		   'driver' 	=> 'mysql',
+		   'persistent' => false,
+		   'host' 		=> 'localhost',
+		   'port' 		=> '',
+		   'login' 		=> 'root',
+		   'password' 	=> '',
+		   'database' 	=> 'yourdatabase',
+		   'schema' 	=> '',
+		   'prefix' 	=> '',
+		   'encoding' 	=> 'utf8'
+		  )
+	   )
+   ),
+
+   /**
+    *	FTP
+    *	FTP connection credentials. The FTP is used by Caracole to set correct chmod rights on folders as well as help
+    *	in the Caracole upgrade process.
+    *
+    *	@server : 	FTP server address
+    *	@port :		FTP port
+    *	@login : 	FTP Login
+    *	@pass :		FTP pass
+    *	@root :		The relative pass to access the app/ directory of your app
+    **/
+   /*
+   'FTP' => array(
+	   'server' => 	'ftp.yoursite.com',
+	   'port'	=>	'21',
+	   'login'	=>	'yourlogin',
+	   'pass'	=>	'yourpass',
+	   'root'	=>	'/yoursite.com/app/'
+   ),
+   */
+
+   /**
+    *	Email
+    *	Caracole can send emails to you, or on your behalf. You have to configure them here. It is also a good place to
+    *	configure any other email adress that your app should be using.
+    *
+    *	You have to define two sets of emails adress, for both your dev and prod environments.
+    *
+    *	@default :		This email adress will be used when no other will be found
+    *	@noreply :		The email adress to use when a mail is not supposed to be answered
+    *	@register :		The email adress sending the welcoming mails after registering
+    *	@recover_pass :	The email adress sending the mails with the recover pass instructions
+	**/
+   'Email' => array(
+	   'prod' => array(
+		   'default' 		=> 'contact@yoursite.com',
+		   'noreply' 		=> 'noreply@yoursite.com',
+		   'register' 		=> 'register@yoursite.com',
+		   'recover_pass' 	=> 'pass@yoursite.com'
+	   ),
+	   'dev' => array(
+		   //'default' 		=> 'contact@yoursite.com',
+		   'default' 		=> 'timcc.perso@gmail.com',
+		   'noreply' 		=> 'noreply@yoursite.com',
+		   'register' 		=> 'register@yoursite.com',
+		   'recover_pass' 	=> 'pass@yoursite.com'
+	   )
+   ),
+
+   /**
+    *	SiteUrl
+    *	Define here the various url of your website. We suggest that you define at least a base and admin urls.
+    *
+    *	You have to define two sets of urls, for both your dev and prod environments.
+    *
+    *	@default : 	The default site url
+    *	@admin :	The adress to the admin panel
+    *	@css :		A subdomain to fetch CSS content
+    *	@js :		A subdomain to fetch JS content
+    *	@img :		A subdomain to fetch <img> content
+    *	@document :	A subdomain to fetch any other document
+    *
+    *	Note : Creating subdomains to fetch static content is a good way to improve client side performance because it
+    *	tricks the browser into thinking each sudomain is a different hosts and thus allowing for parallel download of
+    *	content.
+    *	You should create those subdomains as CNAMEs to your main domain.
+    **/
+   'SiteUrl' => array(
+	   'prod' => array(
+		   'default' 	=> 'http://www.yoursite.com/',
+		   'admin' 		=> 'http://www.yoursite.com/admin/',
+		   'js' 		=> 'http://www.yoursite.com/',
+		   'css'		=> 'http://www.yoursite.com/',
+		   'img' 		=> 'http://www.yoursite.com/',
+		   'document'	=> 'http://www.yoursite.com/'
+	   ),
+	   'dev' => array(
+		   'default' 	=> 'http://caracole/',
+		   'admin' 		=> 'http://caracole/admin/',
+		   'js' 		=> 'http://caracole/',
+		   'css'		=> 'http://caracole/',
+		   'img' 		=> 'http://caracole/',
+		   'document'	=> 'http://caracole/'
+	   )
+	   /*
+	    'dev' => array(
+		   'default' 	=> 'http://yoursite/',
+		   'admin' 		=> 'http://yoursite/admin/',
+		   'js' 		=> 'http://yoursite/',
+		   'css'		=> 'http://yoursite/',
+		   'img' 		=> 'http://yoursite/',
+		   'document'	=> 'http://yoursite/'
+	   )
+	   */
+   ),
+
+   /**
+	*	Admin menu
+	*	Define here the list of links displayed in the admin menu. Each key represent a link, or a group of links.
+	*
+	*	@label	:		The name of the link (or group)
+	*	@icon 	:		The icon to display for this group
+	*	@url 	:		The target url of the link
+	*	@links  :		Array of sublinks. Each entry should have a label and url key
+	**/
+	'Admin' => array(
+		'menu' => array(
+			array(
+			   'label' => __d('caracole', 'Pages', true),
+			   'icon' => 'Page',
+			   'url' => array('admin' => true, 'plugin' => 'caracole_pages', 'controller' => 'pages', 'action' => 'index'),
+			)
+		)
+	),
+
+   /**
+    *	Debug
+    *	You can define debug options for both your prod and dev environment. Setting a value of 2 in dev and 0 in prod
+    *	is a good practice
+    **/
+	'debug' => array(
+		'prod' => 0,
+		'dev' => 2
+	),
+
+	/**
+	 *	Security
+	 *	You should always define those Security settings and never keep the default value.
+	 *
+	 *	@salt : 		This is the salt value used to hash password.
+	 *					Wordpress/bbPress has made publicy available a page to generate thos kind of salt values.
+	 *					https://api.wordpress.org/secret-key/1.1/bbpress/
+	 *	@cipherSeed :	This is a numeric value used to encrypt/decrypt cookie values. Just a random string of numbers
+	 **/
+	'Security' => array(
+	   //'salt' 			=> '.r2tZT?E.IQiYG)r1y-$b0A-m]k5D`sk&t.Cvn8rJ.p-H0N,IlFd6v!Q|[F@:~%3',
+	   'salt' 			=> 'inKW JP4/yB*j[qhkqgPHHAI$?)CN7zSK<$en?C&|*,BrCJ/~&`$!. lddXc1/oB',
+	   //'cipherSeed'		=> '481516234276859309657453542496749683645'
+	   'cipherSeed'		=> '574535424967496836454815162342768593096'
+	)
+));

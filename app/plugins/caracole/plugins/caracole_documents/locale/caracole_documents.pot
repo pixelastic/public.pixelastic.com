@@ -1,0 +1,105 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-08-16 20:51+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:6
+msgid "The file you've selected is too big to be uploaded. Please select a smaller file."
+msgstr ""
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:7
+msgid "The file you selected is empty. Make sure it is not a shortcut or a link."
+msgstr ""
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:8
+msgid "File error #"
+msgstr ""
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:9
+msgid "Unable to connect to the upload server. Please make sure that your internet connection is active. Reloading the page may remove the issue."
+msgstr ""
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:10
+msgid "The response we got from the server is not JSON. There seems to be a misconfiguration of your server."
+msgstr ""
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:11
+msgid "Error"
+msgstr ""
+
+#: \views\helpers\document.php:45
+msgid "Remove"
+msgstr ""
+
+#: \views\helpers\document.php:69
+msgid "Select a file"
+msgstr ""
+
+#: \views\helpers\document.php:79
+msgid "Cancel"
+msgstr ""
+
+#: \views\helpers\document.php:117
+msgid "%1$s.%2$s (%3$s)"
+msgstr ""
+
+#: \models\document.php:35
+msgid "Upload of php files is strictly forbidden for security reasons."
+msgstr ""
+
+#: \models\document.php:215
+#: \controllers\documents_controller.php:31
+msgid "No file uploaded"
+msgstr ""
+
+#: \models\document.php:232
+msgid "Unable to create upload directory. Check that your files/ directory is writable."
+msgstr ""
+
+#: \models\document.php:240
+msgid "Unable to write file on disk. Check that your files/ directory is writable."
+msgstr ""
+
+#: \models\document.php:302
+msgid "This file extension, %1$s, is not allowed."
+msgstr ""
+
+#: \models\document.php:317
+msgid "This file extension, %1$s, is forbidden."
+msgstr ""
+
+#: \models\document.php:383;386
+msgid "The uploaded file is too big. Please choose a file smaller that %1$s."
+msgstr ""
+
+#: \models\document.php:389
+msgid "The file was only partially uploaded. Please, try again."
+msgstr ""
+
+#: \models\document.php:392
+msgid "The file you have selected is empty. Please, choose an other file."
+msgstr ""
+
+#: \models\document.php:395
+msgid "Temporary directory is not available. Please make sure that it exists on the server."
+msgstr ""
+
+#: \models\document.php:398
+msgid "Unable to write file on disk."
+msgstr ""
+
+#: \models\document.php:401
+msgid "Unable to upload your file. Please report the problem."
+msgstr ""
+

@@ -1,0 +1,173 @@
+/**
+ *	layout.css
+ *	Main layout of the admin panel
+ **/
+html { background:url(data:image/gif;base64,R0lGODlhHgAeAMQAAOvk2uvj2eff0+ri1+3m3efg0+nh1Ovj2Onh1uzm2+3m3Orj1+zm3Ovl2urj2Ojg0+jg1Oni1uzl2+nh1evk2eff0ubf0gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAeAB4AAAX/IARQlAU5VmVJ0ERBFcVOsdJY5jMpRRFVDoWlAWFAJDgZTjKRMCY4oKMSkUGGQ6oqImFKKorBglJ9mBzd6eMhVEkcD4GDIYgoFhYFgAAdWHZQfxJkCBEpDxRgY4EVCxU0EiOQjwQBERCOMC0kA1xQJA8NEwAWCDgHFgI6DBSjJSVTfwkBYwgVBg1mDQUlf4GpN3gAE6OXAU8OAQWpCg+NDFwUCANN0AnQUg4OFERYjTgTEQxjN483BEUpEgnOAqkEFA9obhYBJ44JcC2GFQgE8qPMQIBhCMeCAogq3JAQIQGNFBUGoMCRhEEABA1sQeBiIEEFGEgCQOliIVGhkogm/7T4w8BZhI5MjAxcY4GUyhILJ2B8EGHMgEdGWAhA4ICABQcN8EQwkyLHgiA/VLxKBGTBIAc/mkh4YMCJAwBWDywI8OUojhZXIiC1A4DBI1vhkpKoICHAnwZkGAyg4I7sqxQNsp4IR2EOTxkJACy14CziRIoULGLUyNGjUSgK6L4ZdAXAOsYCvrCaQ4AhBDJkGlSocGBCAgsEKqxpswKOHDp28OjhY8HPjsITHjBMMGgBG7w6GItaDWEACwmFEhysAFaG8AQt9v4xSKaLyABbXrcYFOGk7ER3WkVxBEkS3QZ1IjSZ4IAGFIWFq3gdwoCAuDUDBNCMEg6phoQKw6RmxFUUL6iFRAstUQETdok8QIANDKQAgQDc4CBAA251kYBqByzU0EOrSURRRRdl9BESSInCzSMq0XBaA13EgUMoOjlglQVlTMCKKyUdpYJrtEhzSy5D8BICADs=); }
+a { color:#16AEC5; }
+h2 { font-family:Georgia; font-size:2em; line-height:50px; height:50px;}
+h3 { font-family:Georgia; font-size:1.4em; line-height:40px; height:40px;}
+.global { padding-bottom:0.8em; }
+
+/* Masthead */
+	.masthead {  height:90px; margin-bottom:10px; color:#FFFFFF;  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAABaCAYAAACrDDblAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGdJREFUeNrs1LsNgDAQA9AEmIY2dfZfCfERZAQqF9Gz5PrpCl/trb0lmKWEAwQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgE/k8d3ZPgNnqmwWP6C6/pwTsNPukdRse/pj/NJ8AA3J4JauqdpwMAAAAASUVORK5CYII=) repeat-x top;}
+		.ie-lt8 .masthead { background-image:url(../img/caracole/masthead.png); }
+	.masthead .container { height:80px; }
+	.masthead h1 { margin:0px; display:block; }
+	.masthead h1 a { display:block; height:80px; position:relative; }
+	.masthead h1 a span { display:block; position:absolute; top:0px; left:0px; height:80px; width:240px; background:url(../../img/caracole/logo.png) top left no-repeat;  }
+	/* Login options */
+		.masthead .loginInfos { height:40px; line-height:65px; text-align:right; }
+	/* View Website */
+		a.viewWebsite { display:inline-block; background:#2b2424; border:1px solid #544a4a; line-height:30px; height:30px; padding:0px 10px; margin:24px 0 0 10px; font-size:1.4em; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;  }
+		a.viewWebsite:hover, a.viewWebsite:focus { background:#544a4a; text-decoration:none;}
+
+
+
+/* Sidebar */
+	.sidebar { background:#a5948a; color:#CFC5C5; border-radius:10px; -moz-border-radius:10px;-webkit-border-radius:10px; box-shadow:1px 1px 3px rgba(0,0,0,0.8); -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.8); -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.8);}
+	.sidebar > ul { margin:10px; list-style:none; }
+	/* First level links */
+		.sidebar > ul > li { margin-bottom:0.6em; }
+		.sidebar a.button { display:block; color:#333333; background-color:#A5948A; padding-left:10px; margin:0px; text-shadow:0 0px 3px rgba(255,255,255,0.25);}
+		.sidebar a.button:hover, .sidebar a.button:focus { background-color:#ac9d94; }
+	/* Parent links */
+		body:only-of-type .sidebar li.parent { position:relative; }
+		body:only-of-type .sidebar li.parent > a:after { content:"\25BA"; position:absolute; top:0px; right:10px; padding-left:5px; padding-left:5px; height:1.85em; line-height:1.85em; font-size:1.2em; color:rgba(255,255,255,0.8); border-left:1px solid rgba(255,255,255, 0.2); 	  }
+		/* Opened links (js) */
+			.js .sidebar a.opened + ul { display:block;}
+			.js .sidebar a.opened, .js .sidebar a.currentPage { background-color:#2DAEBF; color:#FFFFFF; text-shadow: none; }
+			.js .sidebar a.opened:hover, .js .sidebar a.currentPage:hover, .js .sidebar a.opened:focus, .js .sidebar a.currentPage:focus { background-color:#3dc0d1; }
+			.js body:only-of-type .sidebar li.parent a.opened:after { content:"\25BC"; color:rgba(255,255,255,1);  }
+	/* Sublists */
+		.sidebar ul ul { margin-top:0.4em; }
+		.js .sidebar ul ul { display:none; }
+		.sidebar ul ul li { margin-bottom:0.2em; }
+		.sidebar ul ul a { color:#CFC5C5; }
+
+
+
+/* Main content */
+	.mainContent { background:#FFFFFF; padding-bottom:0.8em; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; box-shadow:1px 1px 3px rgba(0,0,0,0.8); -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.8);-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.8);}
+		/* Main title */
+		.mainTitle { height:50px; background:#72d4e3; border-top-left-radius:10px; border-top-right-radius:10px; -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px;-webkit-border-top-left-radius:10px; -webkit-border-top-right-radius:10px;}
+			/*	Title */
+			.mainTitle h2 { margin:0px; float:left; padding:0px 10px; }
+			/* Toolbar */
+			.mainTitle .mainToolbar { float:right; border-left:1px solid rgba(127,127,127,0.25); }
+			.mainTitle .mainToolbar li { height:50px; border-left:1px solid rgba(255,255,255,0.5); border-right:1px solid rgba(127,127,127,0.25); }
+			.mainTitle .mainToolbar li:last-of-type { border-right:none; }
+			.mainTitle .mainToolbar a { color:#FFFFFF; }
+				/* Search form */
+				/* TODO : Search button is cropped in Chrome */
+				.searchForm .searchField { float:left; margin-top:3px; padding:0px; border:none; }
+				.searchForm .searchField label { display:none; }
+				.searchForm .searchField input[type=text] { background:#66becc; border:none; color:#FFFFFF; font-weight:bold; width:150px; height:25px; padding:0px 0.3em; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius:8px;				box-shadow:1px 2px 3px rgba(0, 0, 0, 0.5) inset, 1px 1px 1px rgba(255,255,255,0.5); -moz-box-shadow:1px 2px 3px rgba(0, 0, 0, 0.5) inset, 1px 1px 1px rgba(255,255,255,0.5); -webkit-box-shadow:1px 1px 1px rgba(255,255,255,0.5); }
+				.searchForm .searchField input[type=text]:focus { box-shadow:1px 2px 3px rgba(0, 0, 0, 0.3) inset, 1px 1px 1px rgba(255,255,255,0.5); -moz-box-shadow:1px 2px 3px rgba(0, 0, 0, 0.3) inset, 1px 1px 1px rgba(255,255,255,0.5);	-webkit-box-shadow:1px 1px 1px rgba(255,255,255,0.5); }
+				.searchForm .submit { margin:0px 0.2em 4px 0.5em; width:30px; height:28px; }
+				.searchForm button .icon { margin:0px; }
+				.searchForm button em { display:none; }
+					/*	Advanced search */
+					.advancedSearch { float:left; }
+					.advancedSearch .advancedSearchButtonContainer { height:28px; }
+					.advancedSearch .advancedSearchDropdown { display:none; }
+						/* Without JS */
+							.njs .advancedSearch .advancedSearchButtonContainer { float:left; background:none; border:none; margin:0px 0px 0px 5px; padding:0px; -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none;}
+							.njs .advancedSearch .searchButton {  padding:0px; width:30px; height:28px;}
+							.njs .advancedSearch .toggleAdvancedSearchDropdownTop { display:none; }
+						/* With JS enabled */
+							.js .advancedSearch { position:relative; }
+							.js .advancedSearch .advancedSearchButtonContainer { margin-left:5px; padding:0px; }
+							.js .advancedSearch .advancedSearchButtonContainer:active .searchButton { border-color:transparent;}
+							.js body:only-of-type .advancedSearch .advancedSearchButtonContainer:active .toggleAdvancedSearchDropdownTop { border-color:transparent;}
+							/* Simple search button */
+								.js .advancedSearch .searchButton { float:left; height:28px; padding:0px 5px; border-right:1px solid #6fbfcc; background:none; margin:0px; -moz-border-radius:0px; -webkit-border-radius:0px; border-radius:0px; -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; }
+							/* Toggle dropdown */
+								.js .advancedSearch .toggleAdvancedSearchDropdownTop { border-left:1px solid #b2e7ef; height:28px; line-height:28px; width:25px; display:block; float:left; overflow:hidden; position:relative; font-size:1.2em; text-align:center;	text-indent:-99999px; text-decoration:none;	}
+								.js body:only-of-type .advancedSearch .toggleAdvancedSearchDropdownTop:after { position:absolute; right:0px; top:0px; content:"\25BC"; text-indent:0px;	height:28px; width:25px; color:#FFFFFF; line-height:30px;}
+							/* Dropdown */
+								.advancedSearchDropdown { position:absolute; z-index:100; top:31px; right:0px; background:#FFFFFF; padding:10px; border:4px solid #eeeeee; box-shadow:1px 5px 5px rgba(0,0,0,0.2); -moz-box-shadow:1px 5px 5px rgba(0,0,0,0.2); -webkit-box-shadow:1px 5px 5px rgba(0,0,0,0.2);-webkit-border-radius: 10px; -webkit-border-top-right-radius: 0; -moz-border-radius: 10px; -moz-border-radius-topright: 0; border-radius: 10px; border-top-right-radius: 0;}
+								/* Toggle dropdown */
+								.toggleAdvancedSearchDropdownBottom { position:absolute; top:-50px; right:6px; width:59px; height:36px;	content: " "; background:#FFFFFF; border:4px solid #eeeeee; border-bottom:none;	-webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;	line-height:28px; font-size:1.3em; color:#d2d2d2; }
+								.toggleAdvancedSearchDropdownBottom .iconSearch { margin:4px 0px 0px 4px; }
+								body:only-of-type .toggleAdvancedSearchDropdownBottom:after { position:absolute; right:6px; top:2px; content:"\25BC"; color:#CECECE;}
+								/* Adds a nice curve between the tab and the fieldset. */
+								body:only-of-type .toggleAdvancedSearchDropdownBottom:before {
+									/* Placing on top of the other borders */
+									content: " "; display:block; position:absolute; left:-20px; bottom:0px; z-index:101;
+									/* Curve */
+									width:16px; height:16px; background:transparent; border:4px solid #eeeeee; border-top:none;	border-left:none; -webkit-border-bottom-right-radius: 10px;	-moz-border-radius-bottomright: 10px;	border-bottom-right-radius: 10px;
+									/* Hiding initial border */
+									-box-shadow:10px 10px 1px #FFFFFF; -webkit-box-shadow:10px 10px 1px #FFFFFF; -moz-box-shadow:10px 10px 1px #FFFFFF;
+								}
+								/* Advanced form styling */
+								.advancedSearchDropdown h3 { margin:0px; height:auto; line-height:inherit; }
+								.advancedSearchDropdown .input { width:315px; overflow:hidden; }
+								.advancedSearchDropdown .input label { width:100px; margin-right:10px; text-align:right; float:left; }
+								.advancedSearchDropdown .input select { width:200px; }
+								.advancedSearchDropdown .checkbox input { margin-left:90px; }
+								.advancedSearchDropdown .checkbox label { width:auto; float:none; margin-right:0px; text-align:left; }
+								body:only-of-type .advancedSearchDropdown .checkbox label { margin-left:75px; }
+								.advancedSearchDropdown button { float:right; margin-top:10px;}
+
+		/* Inner content */
+		.innerContent { padding:0.8em;}
+
+
+
+/* Toolbar */
+	.secondaryToolbar { list-style:none; margin:0px; height:3.2em; background:#ebf7f9; overflow:hidden; }
+	.secondaryToolbar li { float:left; }
+	.secondaryToolbar li a { display:block; line-height:3.2em; height:3.2em; padding:0px 10px; border-right:1px solid rgba(127,127,127,0.25); border-left:1px solid rgba(255,255,255,0.5);}
+	.secondaryToolbar li:first-of-type a { border-left:none; }
+	.secondaryToolbar li:last-of-type { border-right:1px solid rgba(255,255,255,0.5); }
+	.secondaryToolbar li:hover a { text-decoration:none; background:#72D4E3; color:#FFFFFF; border-color:#72D4E3; }
+	.secondaryToolbar li a:active { line-height:3.4em; -moz-box-shadow:5px 5px 5px -5px rgba(0, 0, 0, 0.9) inset; box-shadow:5px 5px 5px -5px rgba(0, 0, 0, 0.9) inset; -webkit-box-shadow:5px 5px 5px -5px rgba(0, 0, 0, 0.9) inset;}
+
+
+
+
+/**
+ *	Loggued out layout
+ **/
+
+/* Centering form */
+.logoutLayout { height:100%; }
+.logoutLayout body { height:100%; display:table; width:100%; }
+.logoutLayout .global { display:table-cell; vertical-align:middle; width:100%; }
+.logoutLayout .mainContent { display:table; margin:0px auto; float:none; max-width:450px; width:auto; }
+
+	/* Styling form */
+		.logoutLayout .niceForm .input { padding:0.8em;  text-align:left; }
+		.logoutLayout .niceForm input[type=text], .logoutLayout .niceForm input[type=password] { width:320px; }
+		/* Labels */
+			.logoutLayout .niceForm label { float:none; font-size:1.2em; padding-bottom:0.2em; text-align:left; display:block; text-align:left; width:auto; }
+		/* Inputs */
+			.logoutLayout .niceForm input { display:block; }
+		/* Checkboxes */
+			.logoutLayout .checkbox input, .logoutLayout .checkbox label { margin-left:0px; display:inline;}
+			.logoutLayout body:only-of-type .niceForm .checkbox label { margin-left:0px; }
+		/* Error messages */
+			.logoutLayout .message { width:auto; }
+		/* Help messages */
+			.logoutLayout .help { margin-top:-25px; }
+		/* Required */
+			.logoutLayout .niceForm .input .iconRequired { top:42px; right:4px; left:auto; }
+
+	/**
+	 *	Login page
+	 **/
+	/* OpenId on the login page */
+		.logoutLayout.js .plainValue { float:none; }
+		.logoutLayout.js .goToOpenId, .logoutLayout.js .goToClassic { display:block; text-align:right; padding:0.2em 0px; }
+		.logoutLayout.js .goToOpenId:hover, .logoutLayout.js .goToClassic:hover { text-decoration:none; }
+		.logoutLayout.js .providers li { padding:0px 0.8em 0px 0px;}
+	/* Max width */
+		.userLogin .mainContent { max-width:320px;}
+
+	/**
+	 *	Pass
+	 **/
+		/* Input */
+			.userPass .niceForm input[type="text"] { width:400px; }
+		/* Change pass */
+			.userPassForm .mainContent { max-width:520px; }

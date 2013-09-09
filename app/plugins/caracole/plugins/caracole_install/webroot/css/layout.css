@@ -1,0 +1,8 @@
+/**
+ *	layout.css
+ *	Layout file for the install page. It is mostly based on the admin panel layout
+ **/
+body { padding:1.6em; }
+.niceForm label { width:250px; }
+.niceForm .iconRequired { left:570px; }
+.niceForm .error-message { padding-left:260px; }

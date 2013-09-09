@@ -1,0 +1,79 @@
+/**
+ *	index.css
+ *	Styling of the admin_index page, and all related index pages
+ **/
+/* Select and apply action */
+.itemListOptions { margin-bottom:0.4em; }
+.itemListOptions .select { float:left; }
+.itemListOptions .select .label { padding:0px 0.5em; }
+.itemListOptions .apply { float:right; }
+.itemListOptions .apply select { margin-right:0.5em; }
+
+/* Item list */
+.itemList { width:100%; box-shadow:1px 3px 2px rgba(0,0,0,0.5); -moz-box-shadow: 1px 3px 2px rgba(0,0,0,0.5);-webkit-box-shadow: 1px 3px 2px rgba(0,0,0,0.5); border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; }
+
+	/**
+	 *	Using a table
+	 *	This is used in every model index page, to display the list of items that can be edited
+	 *	Each row is an item, and each column an attribute. First column is always a checkbox.
+	 **/
+	table.itemList { border:none; }
+		/* Header */
+		table.itemList thead th { background:#a5948a; color:#FFFFFF; white-space:nowrap; border:none; font-weight:bold; height:3.2em; padding:0px;}
+		table.itemList thead th.checkbox { 	width:40px; }
+		table.itemList thead th:hover { background:#775f51; }
+		table.itemList thead th:first-of-type { border-top-left-radius:10px; -moz-border-radius-topleft:10px; -webkit-border-top-left-radius:10px; }
+		table.itemList thead th:last-of-type { border-top-right-radius:10px; -moz-border-radius-topright:10px; -webkit-border-top-right-radius:10px; }
+		table.itemList thead a { outline:none; display:block; color:#FFFFFF; height:3.2em; line-height:3.2em; padding-left:0.4em; }
+		table.itemList thead a:hover { text-decoration:none; }
+		/* Clicking a header */
+			table.itemList thead th:active { outline:none; -moz-box-shadow:5px 5px 5px -5px rgba(0, 0, 0, 0.9) inset; box-shadow:5px 5px 5px -5px rgba(0, 0, 0, 0.9) inset; -webkit-box-shadow:5px 5px 5px -5px rgba(0, 0, 0, 0.9) inset;}
+			table.itemList thead th:active a { line-height:3.6em; }
+			/* Asc and desc arrows */
+			body:only-of-type table.itemList thead a { padding-right:20px; position:relative; }
+			body:only-of-type table.itemList thead a:after { display:none; content:"\25BE"; position:absolute; top:0px; right:10px; color:rgba(255,255,255,0.8); height:3.2em; line-height:1.4em; font-size:2em;}
+			body:only-of-type table.itemList thead a.asc:after { content:"\25B4"; }
+			body:only-of-type table.itemList thead a:hover:after { display:block; }
+		/* Body */
+		table.itemList tbody td { border-color:#e8e7e7; padding:0px; }
+		table.itemList tbody a { display:block; height:2.4em; line-height:2.4em; padding-left:0.4em; overflow:hidden;}
+			/* Hover a row */
+			table.itemList tbody tr:hover td { background:#eeeeee; }
+			table.itemList tbody a:hover { text-decoration:none; }
+			/* Checkboxes */
+			table.itemList tbody td.checkbox { border-left:1px solid #E8E7E7; width:40px; text-align:center; }
+			table.itemList tbody td.checkbox label { display:none; }
+				/* 	Improved checkboxes */
+				body:only-of-type table.itemList tbody td.checkbox label:before,
+				body:only-of-type table.itemList tbody td.checkbox { position:relative; }
+				body:only-of-type table.itemList tbody td.checkbox input { position:absolute; left:-999999px; }
+				body:only-of-type table.itemList tbody td.checkbox label { display:block; width:40px; height:2.4em; text-indent:-9999px; position:relative; }
+				body:only-of-type table.itemList tbody td.checkbox label:before { position:absolute; top:50%; margin-top:-12px; left:50%; margin-left:-14px; width:25px; height:25px; content:" "; background:url(../img/caracole/input-sprite.png) -25px 0px no-repeat;}
+				body:only-of-type table.itemList tbody td.checkbox label:hover:before, body:only-of-type table.itemList tbody td.checkbox input:focus + label:before { background-position:-25px -25px; }
+				body:only-of-type table.itemList tbody td.checkbox label:active:before { background-position:-25px -50px; }
+				body:only-of-type table.itemList tbody td.checkbox input:checked + label:before { background-position:-25px -75px; }
+				body:only-of-type table.itemList tbody td.checkbox input:checked + label:hover:before, body:only-of-type table.itemList tbody td.checkbox input:checked:focus + label:before { background-position:-25px -100px; }
+				body:only-of-type table.itemList tbody td.checkbox input:checked + label:active:before { background-position:-25px -125px; }
+			/* Drafts */
+			table.itemList tbody tr.isDraft a { color:#8C8888; font-style:italic; }
+		/* Footer */
+		table.itemList tfoot td { background:#eeeeee; height:2.4em; line-height:2.4em; padding:0px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; -moz-border-radius-bottomleft:10px; -moz-border-radius-bottomright:10px;-webkit-border-bottom-left-radius:10px; -webkit-border-bottom-right-radius:10px;		}
+		table.itemList .paginate { color:#8C8888; }
+		table.itemList .paginate .current { background:#CECECE; color:#8C8888; height:1.6em; line-height:1.6em; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; box-shadow:-1px -1px 3px rgba(255, 255, 255, 0.9) inset, 1px 1px 3px rgba(0, 0, 0, 0.5) inset; -moz-box-shadow:-1px -1px 3px rgba(255, 255, 255, 0.9) inset, 1px 1px 3px rgba(0, 0, 0, 0.5) inset; -webkit-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);		}
+
+	/**
+	 *	Using a list
+	 *	This is used when we only need to display a list of items, without several columns.
+	 *	This is used in the reorder page for example
+	 **/
+	ul.itemList { list-style:none; margin:0px; border:1px solid #E8E7E7; }
+	ul.itemList li { border-bottom:1px solid #e8e7e7; display:block;height:2.4em; line-height:2.4em; padding-left:0.8em; margin:0px; color:#16AEC5; }
+	ul.itemList li:hover { background:#eeeeee; }
+	ul.itemList li:first-of-type { border-top-left-radius:10px; border-top-right-radius:10px; -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px; -webkit-border-top-left-radius:10px; -webkit-border-top-right-radius:10px;}
+	ul.itemList li:last-of-type { border:none; border-bottom-left-radius:10px; border-bottom-right-radius:10px; -moz-border-radius-bottomleft:10px; -moz-border-radius-bottomright:10px; -webkit-border-bottom-left-radius:10px; -webkit-border-bottom-right-radius:10px;}
+		/* Reordering */
+		.js ul.itemList.ui-sortable li { cursor:move; }
+		.js ul.itemList.ui-sortable li.placeholder { background:#16AEC5; }
+		.js ul.itemList.ui-sortable li.ui-sortable-helper { opacity:0.9; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;  box-shadow:1px 1px 3px rgba(0,0,0,0.8); -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.8);-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.8);}
+
+

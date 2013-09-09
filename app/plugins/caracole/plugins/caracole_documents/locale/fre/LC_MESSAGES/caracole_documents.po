@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Caracole Documents\n"
+"POT-Creation-Date: 2010-08-16 20:51+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:6
+msgid "The file you've selected is too big to be uploaded. Please select a smaller file."
+msgstr "Le fichier sélectionné est trop lourd. Merci de sélectionner un fichier plus léger."
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:7
+msgid "The file you selected is empty. Make sure it is not a shortcut or a link."
+msgstr "Le fichier sélectionné est vide. Assurez-vous que ce n'est pas un lien ou un raccourci."
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:8
+msgid "File error #"
+msgstr "Erreur #"
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:9
+msgid "Unable to connect to the upload server. Please make sure that your internet connection is active. Reloading the page may remove the issue."
+msgstr "Impossible de se connecter au serveur d'upload. Assurez-vous que votre connection internet est active. Recharger la page peut parfois régler le problème."
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:10
+msgid "The response we got from the server is not JSON. There seems to be a misconfiguration of your server."
+msgstr "La réponse obtenue du serveur n'est pas du JSON. Il semble qu'il y ait un problème de configuration du serveur."
+
+#: \webroot\js\i18n\jquery-formDocument.js.php:11
+msgid "Error"
+msgstr "Erreur"
+
+#: \views\helpers\document.php:45
+msgid "Remove"
+msgstr "Supprimer"
+
+#: \views\helpers\document.php:69
+msgid "Select a file"
+msgstr "Sélectionnez un fichier"
+
+#: \views\helpers\document.php:79
+msgid "Cancel"
+msgstr "Annuler"
+
+#: \views\helpers\document.php:117
+msgid "%1$s.%2$s (%3$s)"
+msgstr "%1$s.%2$s (%3$s)"
+
+#: \models\document.php:35
+msgid "Upload of php files is strictly forbidden for security reasons."
+msgstr "L'upload de fichiers php est strictement interdit par mesure de sécurité."
+
+#: \models\document.php:215
+#: \controllers\documents_controller.php:31
+msgid "No file uploaded"
+msgstr "Aucun fichier uploadé"
+
+#: \models\document.php:232
+msgid "Unable to create upload directory. Check that your files/ directory is writable."
+msgstr "Impossible de créer le dossier d'upload. Assurez-vous que le dossier files/ soit accesible en écriture."
+
+#: \models\document.php:240
+msgid "Unable to write file on disk. Check that your files/ directory is writable."
+msgstr "Impossible d'écrire le fichier sur le disque. Assurez-vous que le dossier files/ soit accessible en écriture."
+
+#: \models\document.php:302
+msgid "This file extension, %1$s, is not allowed."
+msgstr "Cette extension, %1$s, n'est pas autorisée."
+
+#: \models\document.php:317
+msgid "This file extension, %1$s, is forbidden."
+msgstr "Cette extension, %1$s, est interdite."
+
+#: \models\document.php:383;386
+msgid "The uploaded file is too big. Please choose a file smaller that %1$s."
+msgstr "Le fichier uploadé est trop lourd. Merci de sélectionner un fichier de taille inférieure à %1$s."
+
+#: \models\document.php:389
+msgid "The file was only partially uploaded. Please, try again."
+msgstr "Le fichier n'a été que partiellement uploadé. Merci de recommencer."
+
+#: \models\document.php:392
+msgid "The file you have selected is empty. Please, choose an other file."
+msgstr "Le fichier sélectionné est vide. Merci de sélectionner un autre fichier."
+
+#: \models\document.php:395
+msgid "Temporary directory is not available. Please make sure that it exists on the server."
+msgstr "Impossible d'écrire dans le dossier temporaire. Assure-vous qu'il existe sur le serveur."
+
+#: \models\document.php:398
+msgid "Unable to write file on disk."
+msgstr "Impossible d'écrire le fichier sur le disque."
+
+#: \models\document.php:401
+msgid "Unable to upload your file. Please report the problem."
+msgstr "Impossible d'uploader votre fichier. Merci de signaler le problème."
+
+#~ msgid ""
+#~ "Unable to write file on disk. Please make sure that it exists on the "
+#~ "server."
+#~ msgstr ""
+#~ "Impossible d'écrire le fichier sur le disque. Merci de vous assurer qu'il"
+

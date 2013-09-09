@@ -1,0 +1,375 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-12-13 20:14+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \caracole_app_model.php:87
+msgid "New %1$s"
+msgstr ""
+
+#: \caracole_app_model.php:88
+msgid "Edit %1$s"
+msgstr ""
+
+#: \caracole_app_model.php:89
+msgid "%1$s \"%%1$s\" added"
+msgstr ""
+
+#: \caracole_app_model.php:90
+msgid "%1$s \"%%1$s\" edited"
+msgstr ""
+
+#: \caracole_app_model.php:91
+msgid "%1$s deleted"
+msgstr ""
+
+#: \caracole_app_model.php:92
+msgid "%1$s restored"
+msgstr ""
+
+#: \caracole_app_model.php:93
+msgid "%1$s destroyed"
+msgstr ""
+
+#: \caracole_app_model.php:94
+msgid "%1$s reordered"
+msgstr ""
+
+#: \views\layouts\admin.ctp:63
+msgid "View website"
+msgstr ""
+
+#: \views\layouts\admin.ctp:78
+msgid "Welcome %1$s. %2$s"
+msgstr ""
+
+#: \views\layouts\admin.ctp:80
+msgid "Log out"
+msgstr ""
+
+#: \views\helpers\caracole_form.php:128
+#: \views\helpers\caracole_html.php:70
+msgid "at"
+msgstr ""
+
+#: \views\helpers\caracole_form.php:248
+msgid "It seems that we're having trouble with your form :"
+msgstr ""
+
+#: \views\helpers\caracole_form.php:356
+msgid "Yes"
+msgstr ""
+
+#: \views\helpers\caracole_form.php:356
+msgid "No"
+msgstr ""
+
+#: \views\helpers\caracole_html.php:71
+msgid "hyphen"
+msgstr ""
+
+#: \views\helpers\caracole_html.php:72
+msgid "underscore"
+msgstr ""
+
+#: \views\helpers\caracole_html.php:73
+msgid "dot"
+msgstr ""
+
+#: \views\elements\paginate.ctp:30;31
+msgid "Previous"
+msgstr ""
+
+#: \views\elements\paginate.ctp:39;40
+msgid "Next"
+msgstr ""
+
+#: \views\elements\debug\configure_panel.ctp:8
+#: \vendors\configure_panel.php:15
+msgid "Configure"
+msgstr ""
+
+#: \views\elements\debug\javascript_panel.ctp:10
+#: \views\elements\debug\swf_upload_panel.ctp:9
+msgid "Clear debug"
+msgstr ""
+
+#: \views\elements\admin\menu.ctp:12
+msgid "Advanced settings"
+msgstr ""
+
+#: \views\elements\admin\menu.ctp:17
+msgid "Users"
+msgstr ""
+
+#: \views\elements\admin\menu.ctp:21
+msgid "Documents"
+msgstr ""
+
+#: \views\elements\admin\menu.ctp:25
+msgid "Images"
+msgstr ""
+
+#: \views\elements\admin\menu.ctp:29
+msgid "Errors"
+msgstr ""
+
+#: \views\elements\admin\menu.ctp:33
+msgid "Icons"
+msgstr ""
+
+#: \views\elements\admin\toolbar_main_search.ctp:28;43;59;92
+msgid "Search"
+msgstr ""
+
+#: \views\elements\admin\toolbar_main_search.ctp:69;84
+msgid "Advanced search"
+msgstr ""
+
+#: \views\elements\admin\toolbar_main_search.ctp:79
+msgid "Close"
+msgstr ""
+
+#: \views\elements\admin\toolbar_secondary.ctp:9
+msgid "Back"
+msgstr ""
+
+#: \views\elements\admin\toolbar_secondary.ctp:14
+msgid "Reorder"
+msgstr ""
+
+#: \views\editors\abbr.ctp:8
+msgid "Please enter the abbreviation definition below."
+msgstr ""
+
+#: \views\editors\abbr.ctp:17
+msgid "Definition"
+msgstr ""
+
+#: \views\editors\abbr.ctp:24
+#: \views\editors\codeblock.ctp:39
+#: \views\editors\link.ctp:31
+#: \views\editors\quote.ctp:29
+#: \views\editors\source.ctp:20
+msgid "Cancel"
+msgstr ""
+
+#: \views\editors\abbr.ctp:33
+#: \views\editors\codeblock.ctp:48
+#: \views\editors\link.ctp:40
+#: \views\editors\quote.ctp:38
+#: \views\editors\source.ctp:29
+msgid "Update"
+msgstr ""
+
+#: \views\editors\abbr.ctp:43
+#: \views\editors\codeblock.ctp:58
+#: \views\editors\link.ctp:50
+#: \views\editors\quote.ctp:48
+msgid "Remove"
+msgstr ""
+
+#: \views\editors\charmap.ctp:9
+msgid "Click on the character you want to add. The first cell contains a non-breakable space."
+msgstr ""
+
+#: \views\editors\codeblock.ctp:8
+msgid "Please select the corresponding language in the list below."
+msgstr ""
+
+#: \views\editors\codeblock.ctp:17
+msgid "Language"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:20
+msgid "PHP"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:21
+#: \vendors\javascript_panel.php:15
+msgid "Javascript"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:22
+msgid "CSS"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:23
+msgid "HTML"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:24
+msgid "Apache"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:25
+msgid "SQL"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:26
+msgid "Bash"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:27
+msgid "XML"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:28
+msgid ".ini"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:29
+msgid "AutoHotKey"
+msgstr ""
+
+#: \views\editors\codeblock.ctp:31
+msgid "Coldfusion"
+msgstr ""
+
+#: \views\editors\help.ctp:8
+msgid "The RTE (Rich Text Editor) you are using is tinyMCE %1$s, release by Moxiecode Systems AB under a LGPL license."
+msgstr ""
+
+#: \views\editors\help.ctp:15
+msgid "The grey boxes around your text represent paragraphs, they will not appear on your website once published, but are here to help you better spot the various parts of your text."
+msgstr ""
+
+#: \views\editors\help.ctp:19
+msgid "By pressing Enter, you create a new paragraph. Pressing Ctrl+Enter will create a new line but stay in the same paragraph."
+msgstr ""
+
+#: \views\editors\help.ctp:23
+msgid "You can undo/redo you last actions by using the Ctrl+Z / Ctrl+Y shortcuts"
+msgstr ""
+
+#: \views\editors\help.ctp:27
+msgid "You can open a secondary toolbar, with more options, by pressing the double arrows on the right side of the toolbar."
+msgstr ""
+
+#: \views\editors\help.ctp:31
+msgid "If you have already written your text under Microsoft Word, you have to use the \"Paste from Word\" feature, otherwise your text will not be rendered correctly."
+msgstr ""
+
+#: \views\editors\link.ctp:8
+msgid "You can add a link to a specified page. Do not forget to set a descriptive title if the text of your link is not explicit enough."
+msgstr ""
+
+#: \views\editors\link.ctp:15
+msgid "Url"
+msgstr ""
+
+#: \views\editors\link.ctp:19
+msgid "Title"
+msgstr ""
+
+#: \views\editors\link.ctp:21
+msgid "You can keep it empty if the text of your link is descriptive enough."
+msgstr ""
+
+#: \views\editors\link.ctp:24
+msgid "Open in new window"
+msgstr ""
+
+#: \views\editors\quote.ctp:8
+msgid "You can specify the author and original source of your quote. Click on the remove button to remove the whole quote styling."
+msgstr ""
+
+#: \views\editors\quote.ctp:17
+msgid "Author"
+msgstr ""
+
+#: \views\editors\quote.ctp:21
+msgid "Source"
+msgstr ""
+
+#: \views\editors\quote.ctp:23
+msgid "Enter the URL of the original source."
+msgstr ""
+
+#: \views\admin\admin_edit.ctp:63;78
+msgid "General"
+msgstr ""
+
+#: \views\admin\admin_edit.ctp:63;78
+msgid "Advanced"
+msgstr ""
+
+#: \views\admin\admin_edit.ctp:98
+msgid "Add"
+msgstr ""
+
+#: \views\admin\admin_edit.ctp:98
+msgid "Edit"
+msgstr ""
+
+#: \views\admin\admin_index.ctp:27
+msgid "Select"
+msgstr ""
+
+#: \views\admin\admin_index.ctp:31
+msgid "All"
+msgstr ""
+
+#: \views\admin\admin_index.ctp:32
+msgid "None"
+msgstr ""
+
+#: \views\admin\admin_index.ctp:33
+msgid "Toggle"
+msgstr ""
+
+#: \views\admin\admin_index.ctp:52
+msgid "Apply"
+msgstr ""
+
+#: \views\admin\admin_reorder.ctp:10
+msgid "Javascript is disabled in your browser. To be able to use the reorder feature, you must enable Javascript first."
+msgstr ""
+
+#: \views\admin\admin_reorder.ctp:28
+msgid "Drag and drop items to reorder them the way you want. Changes are saved automatically."
+msgstr ""
+
+#: \views\admin\json\admin_edit.ctp:44
+msgid "Last save at %1$s"
+msgstr ""
+
+#: \vendors\swf_upload_panel.php:15
+msgid "SWFUpload"
+msgstr ""
+
+#: \models\behaviors\caracolable.php:84
+msgid "Name"
+msgstr ""
+
+#: \models\behaviors\caracolable.php:87
+msgid "Delete"
+msgstr ""
+
+#: \models\behaviors\draftable.php:39
+msgid "Save as draft"
+msgstr ""
+
+#: \models\behaviors\draftable.php:40
+msgid "Check this to save this item as a draft. Drafts are not displayed on the public site."
+msgstr ""
+
+#: \models\behaviors\sluggable.php:17
+msgid "Slug"
+msgstr ""
+
+#: \models\behaviors\sluggable.php:18
+msgid "Type in the slug you want for this item. The slug will be displayed in the url and help SEO. If in doubt, keep empty."
+msgstr ""
+

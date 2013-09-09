@@ -1,0 +1,74 @@
+/**
+ *	form.css
+ *	Styling the document input
+ **/
+/* Document input */
+.niceForm .document{ }
+	/* Main upload wrapper */
+	.niceForm .document .upload { overflow:hidden; }
+		/* Value */
+		.niceForm .document .value { display:none; height:30px; line-height:30px; }
+		.upload.finished .remove { display:none; float:left;}
+			/* Showing only in finished mode (when a preview is set) */
+			.niceForm .document .finished .value { display:block; }
+	/* Error messages */
+	.niceForm .document .error-message { clear:both; }
+
+
+/**
+ * Styling with Javascript enabled
+ **/
+/* Value display */
+.js .niceForm .document .preview { float:left; margin-right:10px; }
+	/* Image preview */
+	.js .niceForm .image .preview { float:none; margin-bottom:10px; }
+	.niceForm .image .imagePreview { overflow:hidden; height:96px; line-height:96px; display:block; }
+	.niceForm .imagePreview a.lightbox { float:left; display:block; margin-right:10px; position:relative; }
+	.niceForm .imagePreview a.lightbox:after { position:absolute; bottom:0px; left:0px; width:100%; height:20px; line-height:20px; font-size:11px; background:rgba(0,0,0,0.5); color:#FFFFFF; text-align:center; content:attr(title); }
+	.niceForm .imagePreview a.lightbox:hover { text-decoration:none;}
+	/* In plain mode */
+	.niceForm .image .value { height:auto; }
+
+/* Aligning in niceForm */
+.js .niceForm .dynamicUpload { line-height:30px;}
+.js .niceForm .dynamicUpload .upload {  margin-top:3px; }
+	/* Plain */
+	.js .niceForm .plain .upload .remove { display:none; }
+	.js .niceForm .plain .upload .swfUploadWrapper { display:none; }
+	/* SWFUpload button */
+	.js .dynamicUpload { position:relative; }
+	.js .dynamicUpload .swfUploadWrapper { position:absolute; top:0px; left:0px; z-index:10;}
+	.js .dynamicUpload .buttonUpload { z-index:0; }
+	/* Initial state */
+	.js .dynamicUpload .initial { position:relative; }
+	/* Progress bar */
+	.js .dynamicUpload .progress { overflow:hidden; display:none; }
+	.js .dynamicUpload .progressBar { float:left; width:340px; position:relative; }
+		/*	 Bar */
+		.js .dynamicUpload .barHolder { width:280px; height:22px; float:left; border-left:1px solid #B0B2B5; border-right:1px solid #B0B2B5; background:url(../img/input-sprite.png) 0px -164px repeat-x; }
+		.js .dynamicUpload .bar { height:14px; position:absolute; left:1px; top:4px; min-width:14px; max-width:280px; background:url(../img/input-sprite.png) 0px -150px repeat-x;		}
+		/* Percent */
+		.js .dynamicUpload .percent { float:left; border-right:1px solid #B0B2B5; height:22px; line-height:22px; padding:0px 10px; text-shadow:1px 1px 1px rgba(127,127,127,0.5); background:url(../img/input-sprite.png) 0px -186px repeat-x; }
+			/* Improved progressbar */
+			.js body:only-of-type .dynamicUpload .barHolder { margin-left:12px; position:relative; border:none; }
+			.js body:only-of-type .dynamicUpload .barHolder:before, .js body:only-of-type .dynamicUpload .barHolder:after { width:12px; height:22px; position:absolute; top:0px; content:" "; background:url(../img/input-sprite.png) top left no-repeat;}
+			.js body:only-of-type .dynamicUpload .barHolder:before { left:-12px; z-index:0;  background-position:-50px -52px;}
+			.js body:only-of-type .dynamicUpload .barHolder:after { right:0px; z-index:9; background-position:-63px -52px; }
+			.js body:only-of-type .dynamicUpload .bar { z-index:10; left:-6px; -moz-border-radius:7px; -webkit-border-radius:7px; border-radius:7px; }
+			.js body:only-of-type .dynamicUpload .percent { float:none; border:none; padding:0px 0px 0px 15px; position:absolute; top:0px; left:280px; z-index:8; }
+			.js body:only-of-type .dynamicUpload .percent:after { height:22px; width:10px; position:absolute; top:0px; right:-10px; content:" "; background:url(../img/input-sprite.png) -64px -77px no-repeat; }
+		/* Cancel link */
+		.js .dynamicUpload .cancel { margin-left:10px; line-height:22px; display:block; height:22px; float:left; }
+
+/* Modes */
+	/* Uploading */
+	.js .upload.uploading .progress { display:block;}
+	.js .upload.uploading .initial { display:none; }
+	.js .upload.uploading .swfUploadWrapper { left:-99999px;}
+	/* Finalizing */
+	.js .upload.finalizing .value { display:block;}
+	.js .upload.finalizing .initial { display:none; }
+	/* Finished */
+	.js .upload.finished .remove { display:block; }
+	.js .upload.finished .initial { display:none; }
+	.js .upload.finished .swfUploadWrapper { display:none; }

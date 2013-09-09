@@ -1,0 +1,111 @@
+#	Set default charset to UTF-8
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .css .js .xml .json .rss
+
+#	Force download of some files instead of using browser reader
+AddType application/octet-stream .zip .rar .mp3 .odt .pdf
+
+#	Registering mimetypes for fonts
+AddType x-font/otf	.otf
+AddType x-font/ttf	.ttf
+AddType x-font/eot	.eot
+AddType x-font/woff	.woff
+
+# Default 404 errors
+ErrorDocument 404 /404
+
+#	Our host is in the US, but we are based in France, so...
+SetEnv TZ Europe/Paris
+
+# This rules here are mostly taken from the Yahoo! Performance Best Practices (http://developer.yahoo.com/performance/rules.html)
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# Get rid of the www. part of the website. This is cool but forces to set full cookie on every subdomain (should be avoided for performances)
+	#RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+	# Redirect packed files of JS and CSS to their real file. This way we can keep relative url() paths in original CSS
+	RewriteRule ^(css|js)/packed_(.*)$ $1/packed/$2 [L]
+
+	# Redirecting files/*path*/*uuid*/*name*.*ext* to the correct file. Will allow for arbitrary filenames
+	RewriteRule ^files/(.*)/(([[:alnum:]]{8})-([[:alnum:]]{4})-([[:alnum:]]{4})-([[:alnum:]]{4})-([[:alnum:]]{12}))/(.*)\.(.{1,4}) /files/$1/$2.$9 [L]
+
+	# Blocking browsing access to files/ directory
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^files/(.*) /404 [L]
+
+	# Some browsers asks for favicon.gif, we will serve them the favicon.ico
+	RewriteRule favicon.gif$ favicon.ico [L]
+
+	# Core config of cakePHP
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
+
+# We will put a large expire header on any static content (CSS, JS and images) to use maximum benefit of user caching
+# As our CSS and JS files will be regenerated with a new name if changes are made, they will then be downloaded again
+# As a bonus side effect, setting this will disable the image flickering bug in IE6 with background-image on :hover
+<IfModule mod_expires.c>
+	ExpiresActive On
+	# CSS
+	ExpiresByType text/css 						"access plus 10 years"
+	# Javascript
+	ExpiresByType text/js 						"access plus 10 years"
+	ExpiresByType text/javascript 				"access plus 10 years"
+	ExpiresByType application/x-javascript 		"access plus 10 years"
+	ExpiresByType application/javascript 		"access plus 10 years"
+	# Fonts
+	ExpiresByType x-font/otf 					"access plus 10 years"
+	ExpiresByType x-font/ttf 					"access plus 10 years"
+	ExpiresByType x-font/eot 					"access plus 10 years"
+	# Images
+	ExpiresByType image/png 					"access plus 10 years"
+	ExpiresByType image/gif 					"access plus 10 years"
+	ExpiresByType image/jpg 					"access plus 10 years"
+	ExpiresByType image/jpeg 					"access plus 10 years"
+	# Favicon
+	ExpiresByType image/x-icon 					"access plus 10 years"
+	# Flash
+	ExpiresByType application/x-shockwave-flash "access plus 10 years"
+</IfModule>
+# Remove ETags
+FileETag none
+
+#	GZip compression
+<IfModule mod_deflate.c>
+	# Gzip CSS
+	AddOutputFilterByType DEFLATE text/css
+	# Gzip Javascript
+	AddOutputFilterByType DEFLATE text/js text/javascript application/x-javascript application/javascript
+	# Gzip fonts
+	AddOutputFilterByType DEFLATE x-font/otf x-font/ttf x-font/eot x-font/woff
+	# Gzip JSON
+	AddOutputFilterByType DEFLATE text/x-json application/json
+	# Gzip HTML/XML
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xhtml+xml application/xml
+
+	<IfModule mod_headers.c>
+		Header append Vary User-Agent
+	</IfModule>
+</IfModule>
+
+# Firefox do not allow the loading of a font from another domain (even a subdomain), unless we explictly say so
+<FilesMatch "\.(eot|ttf|otf|woff)$">
+	<IfModule mod_headers.c>
+		Header set Access-Control-Allow-Origin "*"
+	</IfModule>
+</FilesMatch>
+
+
+# Forcing the latest IE version
+<IfModule mod_setenvif.c>
+	<IfModule mod_headers.c>
+		BrowserMatch MSIE ie
+		Header set X-UA-Compatible "IE=Edge" env=ie
+		# Use ChromeFrame if installed
+		BrowserMatch chromeframe gcf
+		Header append X-UA-Compatible "chrome=1" env=gcf
+	</IfModule>
+</IfModule>

@@ -1,0 +1,131 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2010-06-23 23:13+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: \views\installs\index.ctp:6
+msgid "Caracole installation"
+msgstr "Installation de Caracole"
+
+#: \views\installs\index.ctp:15
+msgid "Welcome to the Caracole installation process. Please review all errors shown below and reload the page."
+msgstr "Bienvenue sur la procédure d'installation de Caracole. Veuillez corriger les erreurs affichées ci-dessous et recharger la page."
+
+#: \views\installs\index.ctp:25
+msgid "Please make the appropriate changes in your app/config/config.php file and change your directories access rights."
+msgstr "Merci de modifier le fichier app/config/config.php en conséquence. N'oubliez pas non plus de modifier les droits d'accès à vos dossiers."
+
+#: \views\installs\index.ctp:39
+msgid "You have almost finished the installation process. You now just have to enter the login and password you would like to use for the admin panel."
+msgstr "Vous avez presque terminé le processus d'installation. Vous n'avez plus qu'à entrer l'identifiant et le mot de passe que vous souhaitez utiliser pour accèder à l'espace d'administration."
+
+#: \views\installs\index.ctp:51
+msgid "Setting up the master admin"
+msgstr "Mettre en place l'administrateur principal"
+
+#: \views\installs\index.ctp:55
+msgid "Login"
+msgstr "Identifiant"
+
+#: \views\installs\index.ctp:56
+msgid "Type the login that will be used to login as the main admin. This must be a valid mail address because we will use it to help you recover your password."
+msgstr "Indiquez l'identifiant qui sera utilisé pour identifier l'administrateur principal. Indiquez une adresse mail valide car elle sera utilisée pour vous aider à récupérer votre mot de passe si vous le perdez."
+
+#: \views\installs\index.ctp:62
+msgid "Password"
+msgstr "Mot de passe"
+
+#: \views\installs\index.ctp:63
+msgid "Try to make it difficult to guess. Use number and letters, upper and lowercase"
+msgstr "Essayez d'en trouver un difficile à deviner. Utilisez des chiffres et des lettres, minuscules et majuscules."
+
+#: \views\installs\index.ctp:69
+msgid "Confirm password"
+msgstr "Confirmez le mot de passe"
+
+#: \views\installs\index.ctp:71
+msgid "Just to make sure that there is no typo"
+msgstr "Juste pour s'assurer qu'il n'y a pas de fautes de frappe."
+
+#: \views\installs\index.ctp:91
+msgid "Finish install"
+msgstr "Finir l'installation"
+
+#: \views\installs\index.ctp:111
+msgid "Congratulations, you have succesfully installed Caracole."
+msgstr "Félicitations, vous avez installé Caracole avec succès."
+
+#: \views\installs\index.ctp:116
+msgid "You can now access the admin panel with the login and pass you typed on the previous page."
+msgstr "Vous pouvez maintenant accéder à l'espace d'administration avec l'identifiant et le mot de passe que vous avez indiqués sur la page précédente."
+
+#: \views\installs\index.ctp:121
+msgid "Go to the admin panel"
+msgstr "Aller à l'espace d'administration"
+
+#: \models\install.php:21
+msgid "You have to change the Site.id key to make sure that multiple Caracole installation will play nice with each other."
+msgstr "Vous devez modifier la clé Site.id pour vous permettre à plusieurs installations de Caracole de cohabiter sur le même serveur."
+
+#: \models\install.php:25
+msgid "You have to change the value of Email.default to receive any mail that Caracole could send."
+msgstr "Vous devez changer la valeur de Email.default pour vous assurer de bien recevoir tous les mails envoyés par Caracole."
+
+#: \models\install.php:29
+msgid "You have to change the Security.salt value to avoid rainbow table attacks."
+msgstr "Vous devez modifier la valeur de Security.salt pour éviter des attaques à base de rainbow tables."
+
+#: \models\install.php:33
+msgid "You have to change the Security.cipherSeed value to allow for better cookie encryption."
+msgstr "Vous devez modifier la valeur de Security.cipherSeed pour permettre un meilleure chiffrement des cookies."
+
+#: \models\install.php:37
+msgid "Caracole is unable to connect to your database."
+msgstr "Caracole n'a pas réussi à se connecter à la base de données."
+
+#: \models\install.php:41
+msgid "Your tmp directory is not writable. It is used to store all kind of cached data."
+msgstr "Votre dossier tmp n'est pas accessible en écriture. Il est utilisé pour stocker diverses informations mises en cache."
+
+#: \models\install.php:45
+msgid "Your app/config directory is not writable. It is used to create a dummy file, used to check if Caracole is installed."
+msgstr "Votre dossier app/config n'est pas accessible en écriture. Il est utilisé pour écrire un fichier vide, qui permet de vérifier si Caracole est installé ou non."
+
+#: \models\install.php:49
+msgid "Your webroot/files directory is not writable. It is used to save uploaded documents."
+msgstr "Votre dossier webroot/files n'est pas accessible en écriture. Il est utilisé pour uploader vos documents."
+
+#: \models\install.php:53
+msgid "Your webroot/img/caracole directory is not writable. It is used to save the icon sprite."
+msgstr "Votre dossier webroot/img/caracole n'est pas accessible en écriture. Il est utilisé pour générer le fichier de sprite des icônes."
+
+#: \models\install.php:57
+msgid "Your webroot/css/ directory is not writable. It is used to save the icon sprite CSS rules."
+msgstr "Votre dossier webroot/css/ n'est pas accessible en écriture. Il est utilisé pour sauvegarder le fichier contenant les règles CSS pour le sprite des icônes."
+
+#: \models\install.php:61
+msgid "Your webroot/css/icons.css file is not writable. It is used to store the CSS Sprite icon rules."
+msgstr "Votre fichier webroot/css/icons.css n'est pas accessible en écriture. Il est utilisé pour écrire les règles du Sprite CSS utilisé pour les icônes."
+
+#: \models\install.php:65
+msgid "Your webroot/css/packed directory is not writable. It is used to save compressed CSS files."
+msgstr "Votre dossier webroot/css/packed n'est pas accessible en écriture. Il est utilisé pour stocker les versions compressées des fichiers CSS."
+
+#: \models\install.php:69
+msgid "Your webroot/js/packed directory is not writable. It is used to save compressed Javascript files."
+msgstr "Votre dossier webroot/js/packed n'est pas accessible en écriture. Il est utilisé pour sauvegarder les fichiers Javascript compressés."
+
+#: \controllers\installs_controller.php:69
+msgid "Admin"
+msgstr "Admin"
+
+#: \controllers\installs_controller.php:79
+msgid "This file mark your Caracole installation as successful. Delete it if you want to restart the install procedure."
+msgstr "Ce fichier permet d'indiquer que l'installation de Caracole s'est deroulée avec succès. Supprimez-le si vous souhaitez recommencer la procédure d'installation."
+

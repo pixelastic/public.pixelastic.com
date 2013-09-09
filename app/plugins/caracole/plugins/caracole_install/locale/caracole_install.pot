@@ -1,0 +1,136 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-06-23 23:13+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \views\installs\index.ctp:6
+msgid "Caracole installation"
+msgstr ""
+
+#: \views\installs\index.ctp:15
+msgid "Welcome to the Caracole installation process. Please review all errors shown below and reload the page."
+msgstr ""
+
+#: \views\installs\index.ctp:25
+msgid "Please make the appropriate changes in your app/config/config.php file and change your directories access rights."
+msgstr ""
+
+#: \views\installs\index.ctp:39
+msgid "You have almost finished the installation process. You now just have to enter the login and password you would like to use for the admin panel."
+msgstr ""
+
+#: \views\installs\index.ctp:51
+msgid "Setting up the master admin"
+msgstr ""
+
+#: \views\installs\index.ctp:55
+msgid "Login"
+msgstr ""
+
+#: \views\installs\index.ctp:56
+msgid "Type the login that will be used to login as the main admin. This must be a valid mail address because we will use it to help you recover your password."
+msgstr ""
+
+#: \views\installs\index.ctp:62
+msgid "Password"
+msgstr ""
+
+#: \views\installs\index.ctp:63
+msgid "Try to make it difficult to guess. Use number and letters, upper and lowercase"
+msgstr ""
+
+#: \views\installs\index.ctp:69
+msgid "Confirm password"
+msgstr ""
+
+#: \views\installs\index.ctp:71
+msgid "Just to make sure that there is no typo"
+msgstr ""
+
+#: \views\installs\index.ctp:91
+msgid "Finish install"
+msgstr ""
+
+#: \views\installs\index.ctp:111
+msgid "Congratulations, you have succesfully installed Caracole."
+msgstr ""
+
+#: \views\installs\index.ctp:116
+msgid "You can now access the admin panel with the login and pass you typed on the previous page."
+msgstr ""
+
+#: \views\installs\index.ctp:121
+msgid "Go to the admin panel"
+msgstr ""
+
+#: \models\install.php:21
+msgid "You have to change the Site.id key to make sure that multiple Caracole installation will play nice with each other."
+msgstr ""
+
+#: \models\install.php:25
+msgid "You have to change the value of Email.default to receive any mail that Caracole could send."
+msgstr ""
+
+#: \models\install.php:29
+msgid "You have to change the Security.salt value to avoid rainbow table attacks."
+msgstr ""
+
+#: \models\install.php:33
+msgid "You have to change the Security.cipherSeed value to allow for better cookie encryption."
+msgstr ""
+
+#: \models\install.php:37
+msgid "Caracole is unable to connect to your database."
+msgstr ""
+
+#: \models\install.php:41
+msgid "Your tmp directory is not writable. It is used to store all kind of cached data."
+msgstr ""
+
+#: \models\install.php:45
+msgid "Your app/config directory is not writable. It is used to create a dummy file, used to check if Caracole is installed."
+msgstr ""
+
+#: \models\install.php:49
+msgid "Your webroot/files directory is not writable. It is used to save uploaded documents."
+msgstr ""
+
+#: \models\install.php:53
+msgid "Your webroot/img/caracole directory is not writable. It is used to save the icon sprite."
+msgstr ""
+
+#: \models\install.php:57
+msgid "Your webroot/css/ directory is not writable. It is used to save the icon sprite CSS rules."
+msgstr ""
+
+#: \models\install.php:61
+msgid "Your webroot/css/icons.css file is not writable. It is used to store the CSS Sprite icon rules."
+msgstr ""
+
+#: \models\install.php:65
+msgid "Your webroot/css/packed directory is not writable. It is used to save compressed CSS files."
+msgstr ""
+
+#: \models\install.php:69
+msgid "Your webroot/js/packed directory is not writable. It is used to save compressed Javascript files."
+msgstr ""
+
+#: \controllers\installs_controller.php:69
+msgid "Admin"
+msgstr ""
+
+#: \controllers\installs_controller.php:79
+msgid "This file mark your Caracole installation as successful. Delete it if you want to restart the install procedure."
+msgstr ""
+

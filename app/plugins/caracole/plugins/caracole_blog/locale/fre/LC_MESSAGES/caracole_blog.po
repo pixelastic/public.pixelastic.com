@@ -1,0 +1,318 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Caracole Blog\n"
+"POT-Creation-Date: 2010-06-23 22:37+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+
+#: \views\tags\index.ctp:6
+msgid "Tag index"
+msgstr "Index des tags"
+
+#: \views\tags\index.ctp:23
+msgid "Here are all the available tags, in order of importance."
+msgstr "Voici la liste de tous les tags, classés par ordre d'importance."
+
+#: \views\tags\view.ctp:8
+#: \views\tags\rss\view.ctp:12
+msgid "%1$s - Posts tagged with \"%2$s\""
+msgstr "%1$s - Billets taggués avec \"%2$s\""
+
+#: \views\tags\view.ctp:12
+msgid "Posts tagged with \"%1$s\""
+msgstr "Billets taggués avec \"%1$s\""
+
+#: \views\posts\admin_index.ctp:8
+msgid "%d %B %Y at %H:%M"
+msgstr "%d %B %Y à %H:%M"
+
+#: \views\posts\archive.ctp:9
+msgid "Posts from %1$s"
+msgstr "Billets de %1$s"
+
+#: \views\posts\archive.ctp:12
+msgid "Posts from %2$s %1$s"
+msgstr "Billets de %2$s %1$s"
+
+#: \views\posts\archive_index.ctp:6
+msgid "Blog post archive"
+msgstr "Archive des billets du blog"
+
+#: \views\posts\archive_index.ctp:24
+msgid "Feel free to search trough the entire blog or directly jump to any given month in the archive."
+msgstr "N'hésitez pas à chercher dans la totalité du blog ou bien à aller directement au mois de votre choix."
+
+#: \views\posts\archive_index.ctp:35
+#: \views\elements\search.ctp:16
+msgid "Keyword"
+msgstr "Mot clé"
+
+#: \views\posts\archive_index.ctp:40
+#: \views\elements\search.ctp:6;21
+msgid "Search"
+msgstr "Rechercher"
+
+#: \views\posts\display.ctp:42
+msgid "Tags :"
+msgstr "Tags :"
+
+#: \views\posts\index.ctp:9
+#: \views\posts\rss\index.ctp:7
+msgid "%1$s - Blog"
+msgstr "%1$s - Blog"
+
+#: \views\posts\index.ctp:15
+#: \config\config.php:25;27
+msgid "Blog"
+msgstr "Blog"
+
+#: \views\posts\index.ctp:30
+msgid "Sorry, no post matches your query."
+msgstr "Désolé, aucun billet ne correspond à votre requête."
+
+#: \views\posts\search.ctp:7
+msgid "Search results for \"%1$s\""
+msgstr "Résultat de recherche pour \"%1$s\""
+
+#: \views\posts\search.ctp:11
+#: \views\posts\rss\search.ctp:12
+msgid "%1$s - Posts matching \"%2$s\""
+msgstr "%1$s - Billets correspondants à \"%2$s\""
+
+#: \views\elements\comment_recent.ctp:6
+msgid "Recent comments"
+msgstr "Commentaires récents"
+
+#: \views\elements\popular.ctp:6
+msgid "Popular tags"
+msgstr "Tags populaires"
+
+#: \views\elements\post_recent.ctp:6
+msgid "Recent writings"
+msgstr "Derniers écrits"
+
+#: \views\elements\rss.ctp:12
+msgid "RSS Feed"
+msgstr "Flux RSS"
+
+#: \views\elements\rss.ctp:16
+msgid "Subscribe to RSS feed"
+msgstr "Abonnez-vous au flux RSS"
+
+#: \views\elements\search.ctp:31
+msgid "or browse through the %1$s"
+msgstr "ou bien fouillez dans l'%1$s"
+
+#: \views\elements\search.ctp:33
+msgid "archive"
+msgstr "archive"
+
+#: \views\comments\add.ctp:25
+#: \models\tag.php:40
+msgid "Name"
+msgstr "Nom"
+
+#: \views\comments\add.ctp:34
+#: \models\comment.php:39
+msgid "Email"
+msgstr "Email"
+
+#: \views\comments\add.ctp:35
+msgid "Will not be published"
+msgstr "Ne sera pas publié"
+
+#: \views\comments\add.ctp:41
+#: \models\comment.php:43
+msgid "Website"
+msgstr "Site web"
+
+#: \views\comments\add.ctp:46
+#: \models\comment.php:46
+msgid "Comment"
+msgstr "Commentaire"
+
+#: \views\comments\add.ctp:51
+msgid "Remember me"
+msgstr "Se souvenir de moi"
+
+#: \views\comments\add.ctp:58
+msgid "Preview"
+msgstr "Aperçu"
+
+#: \views\comments\add.ctp:67
+msgid "Add comment"
+msgstr "Ajouter le commentaire"
+
+#: \views\comments\display.ctp:37
+msgid "Flag as spam"
+msgstr "Marquer comme spam"
+
+#: \views\comments\display.ctp:37
+msgid "Remove flag spam"
+msgstr "Ne plus marquer comme spam"
+
+#: \views\comments\display.ctp:43
+msgid "Delete"
+msgstr "Supprimer"
+
+#: \views\comments\index.ctp:12
+msgid "Comments"
+msgstr "Commentaires"
+
+#: \views\comments\index.ctp:17
+msgid "There are no comments on this post yet."
+msgstr "Il n'y a pas encore de commentaires pour ce billet."
+
+#: \views\comments\index.ctp:31
+msgid "... and %1$s spam blocked"
+msgstr "... et %1$s spams bloqués."
+
+#: \views\comments\index.ctp:37
+msgid "Adding a comment"
+msgstr "Ajouter un commentaire"
+
+#: \models\comment.php:28
+msgid "Post"
+msgstr "Billet"
+
+#: \models\comment.php:32
+msgid "Author"
+msgstr "Auteur"
+
+#: \models\comment.php:36
+msgid "User"
+msgstr "Utilisateur"
+
+#: \models\comment.php:57
+msgid "You have to type your name"
+msgstr "Vous devez indiquer votre nom"
+
+#: \models\comment.php:63
+msgid "You have to type a valid email address. Don't worry, it won't be published"
+msgstr "Vous devez indiquer une adresse mail valide. Ne vous inquiétez pas, elle ne sera pas publiée."
+
+#: \models\comment.php:67
+msgid "You have to type your mail address. Don't worry, it won't be published"
+msgstr "Vous devez taper une adresse mail. Ne vous inquiétez pas, elle ne sera pas publiée."
+
+#: \models\comment.php:73
+msgid "You can't add an empty comment."
+msgstr "Vous ne pouvez pas ajouter un commentaire vide."
+
+#: \models\post.php:36
+msgid "Tags"
+msgstr "Tags"
+
+#: \models\post.php:45
+msgid "Date published"
+msgstr "Date de publication"
+
+#: \models\post.php:55
+msgid "Title"
+msgstr "Titre"
+
+#: \models\post.php:59
+msgid "Text"
+msgstr "Texte"
+
+#: \models\post.php:65
+msgid "Publish from"
+msgstr "Publié à partir de"
+
+#: \models\post.php:66
+msgid "The post will not be publicly visible until this date."
+msgstr "Le billet ne sera pas visible avant cette date."
+
+#: \models\post.php:70
+msgid "Publish until"
+msgstr "Publié jusqu'au"
+
+#: \models\post.php:71
+msgid "The post will disapear from the public site when this date is due. Leave empty to never hide the post."
+msgstr "Le billet ne sera plus visible après cette date. Laissez vide pour ne jamais masquer le billet."
+
+#: \models\post.php:82
+msgid "You must set a title for the post"
+msgstr "Vous devez indiquer le titre du billet"
+
+#: \models\post.php:88
+msgid "Another post is using the same slug"
+msgstr "Un autre billet utilise déjà le même slug"
+
+#: \models\tag.php:23
+msgid "Back"
+msgstr "Retour"
+
+#: \models\tag.php:28
+msgid "Merge"
+msgstr "Fusionner"
+
+#: \models\tag.php:51
+msgid "You must set the name of the tag"
+msgstr "Vous devez indiquer le nom du tag"
+
+#: \models\tag.php:57
+msgid "Another tag is using the same slug"
+msgstr "Un autre tag utilise déjà le même slug"
+
+#: \models\tag.php:66
+msgid "You must select a source tag"
+msgstr "Vous devez sélectionner un tag source"
+
+#: \models\tag.php:72
+msgid "You must select a destination tag"
+msgstr "Vous devez sélectionner un tag de destination"
+
+#: \models\tag.php:76
+msgid "The source and destination tag are the same"
+msgstr "Le tag source et de destination sont les mêmes"
+
+#: \controllers\comments_controller.php:99
+msgid "Anonymous"
+msgstr "Anonyme"
+
+#: \controllers\comments_controller.php:140
+msgid "Comment no longer flaggued as spam"
+msgstr "Le commentaire n'est plus considéré comme spam"
+
+#: \controllers\comments_controller.php:140
+msgid "Comment flaggued as spam"
+msgstr "Le commentaire est considéré comme spam"
+
+#: \controllers\tags_controller.php:91
+msgid "Source tag has been deleted and its associated posts moved to the destination tag"
+msgstr "Le tag source a été supprimé et ses posts associés ont été déplacés vers le tag de destination"
+
+#: \controllers\tags_controller.php:107
+msgid "Source"
+msgstr "Source"
+
+#: \controllers\tags_controller.php:110
+msgid "-- Select a source --"
+msgstr "-- Sélectionnez un tag source --"
+
+#: \controllers\tags_controller.php:111
+msgid "Select the source tag. This tag will be deleted and all associated posts will be associated to the destination tag."
+msgstr "Selectionnez le tag source. Ce tag sera supprimée et tous ses posts associés seront déplacés vers le tag de destination."
+
+#: \controllers\tags_controller.php:114
+msgid "Destination"
+msgstr "Destination"
+
+#: \controllers\tags_controller.php:116
+msgid "-- Select a destination --"
+msgstr "-- Sélectionnez un tag de destination --"
+
+#: \controllers\tags_controller.php:118
+msgid "All tags previously associated with the source tag will now be associated to this tag."
+msgstr "Tous les tags précédemment associés avec le tag source seront désormais associés avec ce tag."
+
+#: \controllers\tags_controller.php:124
+msgid "Merge tags"
+msgstr "Fusionner les tags"
+

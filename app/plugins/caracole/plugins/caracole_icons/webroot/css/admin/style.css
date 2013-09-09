@@ -1,0 +1,5 @@
+/**
+ * Icon list
+ **/
+.iconList { list-style:none; overflow:hidden; margin:0px; padding:0.8em;}
+.iconList li { width:20%; float:left; overflow:hidden; white-space:nowrap; }

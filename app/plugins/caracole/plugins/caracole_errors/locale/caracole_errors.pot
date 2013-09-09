@@ -1,0 +1,252 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-08-16 20:58+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \views\errors\error404.ctp:10
+msgid "404 Error : Page not found"
+msgstr ""
+
+#: \views\errors\error404.ctp:15
+msgid "Sorry, the page you are looking for does not exists."
+msgstr ""
+
+#: \views\errors\missing_action.ctp:2
+msgid "Missing Method in %s"
+msgstr ""
+
+#: \views\errors\missing_action.ctp:4;8
+#: \views\errors\missing_behavior_class.ctp:4;8
+#: \views\errors\missing_behavior_file.ctp:4;8
+#: \views\errors\missing_component_class.ctp:4;8
+#: \views\errors\missing_component_file.ctp:4;8
+#: \views\errors\missing_connection.ctp:4;8
+#: \views\errors\missing_controller.ctp:3;7
+#: \views\errors\missing_helper_class.ctp:4;8
+#: \views\errors\missing_helper_file.ctp:4;8
+#: \views\errors\missing_layout.ctp:4;8
+#: \views\errors\missing_model.ctp:3;7
+#: \views\errors\missing_scaffolddb.ctp:4;8
+#: \views\errors\missing_table.ctp:4
+#: \views\errors\missing_view.ctp:5;9
+#: \views\errors\private_action.ctp:4
+#: \views\errors\scaffold_error.ctp:3
+#: \config\i18n.php:8
+msgid "Error"
+msgstr ""
+
+#: \views\errors\missing_action.ctp:5
+msgid "The action %1$s is not defined in controller %2$s"
+msgstr ""
+
+#: \views\errors\missing_action.ctp:9
+msgid "Create %1$s%2$s in file: %3$s."
+msgstr ""
+
+#: \views\errors\missing_behavior_class.ctp:2
+msgid "Missing Behavior Class"
+msgstr ""
+
+#: \views\errors\missing_behavior_class.ctp:5
+msgid "The behavior class <em>%s</em> can not be found or does not exist."
+msgstr ""
+
+#: \views\errors\missing_behavior_class.ctp:9
+#: \views\errors\missing_behavior_file.ctp:9
+#: \views\errors\missing_helper_class.ctp:9
+#: \views\errors\missing_helper_file.ctp:9
+msgid "Create the class below in file: %s"
+msgstr ""
+
+#: \views\errors\missing_behavior_file.ctp:2
+msgid "Missing Behavior File"
+msgstr ""
+
+#: \views\errors\missing_behavior_file.ctp:5
+msgid "The Behavior file %s can not be found or does not exist."
+msgstr ""
+
+#: \views\errors\missing_component_class.ctp:2
+msgid "Missing Component Class"
+msgstr ""
+
+#: \views\errors\missing_component_class.ctp:5
+msgid "Component class %1$s in %2$s was not found."
+msgstr ""
+
+#: \views\errors\missing_component_class.ctp:9
+#: \views\errors\missing_component_file.ctp:9
+#: \views\errors\missing_model.ctp:8
+msgid "Create the class %s in file: %s"
+msgstr ""
+
+#: \views\errors\missing_component_file.ctp:2
+msgid "Missing Component File"
+msgstr ""
+
+#: \views\errors\missing_component_file.ctp:5
+msgid "The component file was not found."
+msgstr ""
+
+#: \views\errors\missing_connection.ctp:2
+#: \views\errors\missing_scaffolddb.ctp:2
+msgid "Missing Database Connection"
+msgstr ""
+
+#: \views\errors\missing_connection.ctp:5
+msgid "%s requires a database connection"
+msgstr ""
+
+#: \views\errors\missing_connection.ctp:9
+msgid "Confirm you have created the file : %s."
+msgstr ""
+
+#: \views\errors\missing_controller.ctp:1
+msgid "Missing Controller"
+msgstr ""
+
+#: \views\errors\missing_controller.ctp:4
+msgid "%s could not be found."
+msgstr ""
+
+#: \views\errors\missing_controller.ctp:8
+msgid "Create the class %s below in file: %s"
+msgstr ""
+
+#: \views\errors\missing_helper_class.ctp:2
+msgid "Missing Helper Class"
+msgstr ""
+
+#: \views\errors\missing_helper_class.ctp:5
+msgid "The helper class <em>%s</em> can not be found or does not exist."
+msgstr ""
+
+#: \views\errors\missing_helper_file.ctp:2
+msgid "Missing Helper File"
+msgstr ""
+
+#: \views\errors\missing_helper_file.ctp:5
+msgid "The helper file %s can not be found or does not exist."
+msgstr ""
+
+#: \views\errors\missing_layout.ctp:2
+msgid "Missing Layout"
+msgstr ""
+
+#: \views\errors\missing_layout.ctp:5
+msgid "The layout file %s can not be found or does not exist."
+msgstr ""
+
+#: \views\errors\missing_layout.ctp:9
+#: \views\errors\missing_scaffolddb.ctp:9
+#: \views\errors\missing_view.ctp:10
+msgid "Confirm you have created the file: %s"
+msgstr ""
+
+#: \views\errors\missing_model.ctp:1
+msgid "Missing Model"
+msgstr ""
+
+#: \views\errors\missing_model.ctp:4
+msgid "<em>%s</em> could not be found."
+msgstr ""
+
+#: \views\errors\missing_scaffolddb.ctp:5
+msgid "Scaffold requires a database connection"
+msgstr ""
+
+#: \views\errors\missing_table.ctp:2
+msgid "Missing Database Table"
+msgstr ""
+
+#: \views\errors\missing_table.ctp:5
+msgid "Database table %1$s for model %2$s was not found."
+msgstr ""
+
+#: \views\errors\missing_view.ctp:3
+msgid "Missing View"
+msgstr ""
+
+#: \views\errors\missing_view.ctp:6
+msgid "The view for %1$s%2$s was not found."
+msgstr ""
+
+#: \views\errors\private_action.ctp:2
+msgid "Private Method in %s"
+msgstr ""
+
+#: \views\errors\private_action.ctp:5
+msgid "%s%s cannot be accessed directly."
+msgstr ""
+
+#: \views\errors\scaffold_error.ctp:1
+msgid "Scaffold Error"
+msgstr ""
+
+#: \views\errors\scaffold_error.ctp:4
+msgid "Method _scaffoldError in was not found in the controller"
+msgstr ""
+
+#: \models\caracole_error.php:25;38
+msgid "Type"
+msgstr ""
+
+#: \models\caracole_error.php:26;42
+msgid "Url"
+msgstr ""
+
+#: \models\caracole_error.php:46
+msgid "Text"
+msgstr ""
+
+#: \models\caracole_error.php:50
+msgid "Headers"
+msgstr ""
+
+#: \config\i18n.php:9
+msgid "Errors"
+msgstr ""
+
+#: \config\i18n.php:10
+msgid "New error"
+msgstr ""
+
+#: \config\i18n.php:11
+msgid "Error \"%1$s\" added."
+msgstr ""
+
+#: \config\i18n.php:12
+msgid "Edit error"
+msgstr ""
+
+#: \config\i18n.php:13
+msgid "Error \"%1$s\" edited."
+msgstr ""
+
+#: \config\i18n.php:14
+msgid "Error \"%1$s\" deleted."
+msgstr ""
+
+#: \config\i18n.php:15
+msgid "Error \"%1$s\" restored."
+msgstr ""
+
+#: \config\i18n.php:16
+msgid "Error \"%1$s\" destroyed."
+msgstr ""
+
+#: \config\i18n.php:17
+msgid "Errors reordered."
+msgstr ""
+

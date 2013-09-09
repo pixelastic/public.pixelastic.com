@@ -1,0 +1,83 @@
+/**
+ *	js.css
+ *	Contains all the styling that should only occur when Javascript is enabled (like for AJAX and popup stuff)
+ *
+ *	zIndex
+ *		Debugkit			: 500000
+ *		Dialogs				: 203000
+ *		Ajax messages 		: 202500
+ *		overlay 			: 202000
+ *		tinyMCE full screen : 200000
+ **/
+
+/**
+ *	Overlay
+ *	Covers the whole website with a dark opaque filter, pretending to be loading something
+ *	.ui-widget-overlay is used by jQuery.
+ *	#lbOverlay is used by the Slimbox plugin.
+ *	.modalOverlay is used for custom purpose, that do no need jQuery
+ **/
+.ui-widget-overlay, #lbOverlay, .modalOverlay { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:202000; cursor:wait;}
+	.ie-lt9 .ui-widget-overlay, .ie-lt9 #lbOverlay, .ie-lt9 .modalOverlay { filter : alpha(opacity=30); }
+
+/**
+ *	Ajax indicator
+ *	Either displaying an indicator to be used with the overlay, or showing a little message, poping from the bottom of the screen
+ **/
+.ajaxIndicator { z-index:202500; display:block; position:fixed; bottom:0px; left:0px; width:100%; color:#FFFFFF; text-align:center; padding:0.8em; text-shadow: 0px 0px 3px rgba(0,0,0,0.5); }
+	.ie .ajaxIndicator { position:absolute; }
+	/* Pending (overlay) */
+		.ajaxIndicator.pending { height:24px; width:160px; position:fixed; top:10px; left:50%; margin-left:-80px; padding:0px; background-image:url(../img/loading-indicator.gif); background-position:top left; background-repeat:no-repeat; }
+	/* Success */
+		.ajaxIndicator.success { background:#5b9524; font-size:1.2em; font-weight:bold; opacity:0.7; }
+	/* Error */
+		.ajaxIndicator.error { background:#b82b16; padding:0.8em; color:rgba(255,255,255,0.9); font-size:0.9em; opacity:0.9; text-align:left; text-shadow:none; }
+		.ajaxIndicator.error h3 { font-family:inherit; height:auto; border:none; color:#FFFFFF; font-size:1em; line-height:1em; margin:0px; font-weight:bold; }
+		.ajaxIndicator.error ul { margin:0.8em 0px 0.8em 2.5em; }
+		.ajaxIndicator.error li { margin-bottom:0.4em; }
+		.ajaxIndicator.error a { color:rgba(255,255,255,0.9); }
+		.ajaxIndicator.error pre.cake-debug { width:800px; overflow-x:hidden; overflow-y:scroll; max-height:300px; background:#cecece; }
+
+
+/**
+ *	Tabs
+ *	To be used in conjunction with jQuery tabs.
+ *	Will fix the FOUC the jQuery UI tabs generally produce
+ *	Cf. http://www.pixelastic.com/blog/223:how-to-prevent-a-fouc-but-still-gracefully-degrade-the-jquery-ui-tabs
+ **/
+	/* Remove ugly outline */
+	.ui-tabs-nav li, .ui-tabs-nav li a { outline:none; }
+	/* jQuery UI needed class to hide unused tabs */
+	.ui-tabs-hide { display: none; }
+	/* Showing the tabMenu only when javascript is enabled */
+	.tabMenu { display:none;}
+	.js .tabMenu { display:block; }
+	/* Fixing the FOUC */
+	.js .tabPanel + .tabPanel { display:none;}
+	.js .tabPanel.ui-tabs-panel { display:block;}
+	.js .tabPanel.ui-tabs-panel.ui-tabs-hide { display:none;}
+
+/**
+ * Sliders
+ **/
+.ui-slider-handle { outline:none; }
+
+
+/**
+ * Draggable
+ **/
+.ui-draggable .ui-dialog-titlebar { cursor:move; }
+
+/**
+ *	Lightbox
+ *	Uses Slimbox 2
+ **/
+#lbCenter, #lbBottomContainer { position: absolute; z-index:202500; }
+	/* Loading */
+		.lbLoading { background:url(../img/loading-indicator.gif) top left no-repeat; }
+	/* Displaying the image */
+		#lbImage { position: absolute; left: 0; top: 0; background-repeat: no-repeat; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -moz-box-shadow:10px 10px 20px rgba(0, 0, 0, 0.3) inset, -10px -10px 20px rgba(0, 0, 0, 0.3) inset, 0 0 20px rgba(255, 255, 255, 0.3); -webkit-box-shadow:10px 10px 20px rgba(0, 0, 0, 0.3) inset, -10px -10px 20px rgba(0, 0, 0, 0.3) inset, 0 0 20px rgba(255, 255, 255, 0.3); box-shadow:10px 10px 20px rgba(0, 0, 0, 0.3) inset, -10px -10px 20px rgba(0, 0, 0, 0.3) inset, 0 0 20px rgba(255, 255, 255, 0.3);}
+	/* Bottom panel */
+		#lbBottomContainer { margin-top:10px; }
+		#lbBottom { padding:5px; background:rgba(0,0,0,0.8); -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+		#lbCloseLink { display:none; }

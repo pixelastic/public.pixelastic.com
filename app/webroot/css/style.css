@@ -1,0 +1,109 @@
+/**
+ *	style.css
+ *	Special styles used only on some few pages, and not included in layout style.
+ *	Layout styling should be set in layout.css
+ *
+ *	Note that this separation is not mandatory, but helps in organizing CSS content.
+ **/
+
+/* One post */
+.postView { margin-bottom:0.8em; }
+.postView + .postView { margin-top:1.6em; }
+.postView .text { padding-right:3px; font-size:1.1em; }
+/* Displaying a date */
+	.postDate { background:#36494b; color:#FFFFFF; text-align:center; width:60px; margin:0px auto 3px auto; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -moz-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); -webkit-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9);}
+	.postDate .month { font-size:1.5em }
+	.postDate .day { font-size:1.5em }
+	.postDate .year { font-size:0.8em }
+/* Post footer */
+	.postFooter { color:#CECECE; background:#36494b; font-size:0.8em; padding:0.5em; margin:1.6em 3px 0.8em 0px; overflow:hidden; -moz-border-radius:5px 5px 5px 5px; -webkit-border-radius:5px 5px 5px 5px; border-radius:5px 5px 5px 5px; -moz-box-shadow:1px 1px 4px rgba(0,0,0,0.9); -webkit-box-shadow:1px 1px 4px rgba(0,0,0,0.9); box-shadow:1px 1px 4px rgba(0,0,0,0.9);	}
+	.postFooter .tags { padding-left:3px; }
+	.postFooter .tags li:before { content:", "; }
+	.postFooter .tags li:first-child:before { content:""; }
+	.postFooter .comments { float:right; }
+		/* Position absolute for IE < 8 */
+		.ie-lt8 .postFooter { position:relative; padding-right:100px;}
+		.ie-lt8 .postFooter .comments { float:none; position:absolute; top:5px; right:5px; }
+		/* Aligning the tags with "Tags :" at least in IE6 even if there's an ugly top padding */
+		.ie6 .postFooter { line-height:10px; }
+		.ie6 .postFooter .tags { display:inline; top:8px; position:relative; }
+
+/* Comments */
+.commentList { padding-bottom:0.8em; }
+	.commentDisplay { margin-bottom:0.8em; }
+	.commentDisplay .commentSide { width:70px; position:relative; float:left; margin:0px 10px 0px 0px;}
+	.commentDisplay .commentSide .userAvatar { margin:auto; }
+	/* User avatar */
+		.userAvatar { background:#36494B; text-align:center; width:60px; height:60px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -moz-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); -webkit-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); }
+		.userAvatar img { margin-top:5px; }
+	/* Comment itself */
+		.commentDisplay .commentMain { background:#26383a; position:relative; float:right; display:inline; width:547px; margin:0px 3px 3px 0px;  border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -moz-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); -webkit-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9);}
+		.commentDisplay .text { padding:0.5em; min-height:25px; }
+		.commentDisplay .infos { overflow:hidden; position:relative; border-top:1px solid #7FA5C9; background:#36494b; height:22px; line-height:22px; padding:0.2em 0.5em;  border-bottom-right-radius:5px; -moz-border-radius-bottomright:5px; -webkit-border-bottom-right-radius:5px; border-bottom-left-radius:5px; -moz-border-radius-bottomleft:5px; -webkit-border-bottom-left-radius:5px;}
+		.commentDisplay .author { font-weight:bold; float:left; }
+		.commentDisplay .date { float:right; font-size:0.9em; }
+		body:only-of-type .commentDisplay .commentMain:before { position:absolute; top:10px; left:-10px; display:block; width:0px; height:0px; content:" "; border-right:10px solid #26383a; border-top:10px solid transparent;  border-bottom:10px solid transparent;border-left:0px solid transparent;}
+	/* Admin comments */
+		.commentDisplay.commentAdmin .commentSide { float:right; margin:0px 0px 0px 10px; }
+		.commentDisplay.commentAdmin .commentMain { float:left; margin:0px 0px 3px 3px; }
+		.commentDisplay.commentAdmin .text { color:#FFFFFF;}
+		.commentDisplay.commentAdmin .commentMain:before { display:none; }
+		.commentDisplay.commentAdmin .commentMain:after { position:absolute; top:10px; right:-10px; display:block; width:0px; height:0px; content:" "; border-top:10px solid transparent;	border-left:10px solid #577591; border-bottom:10px solid transparent; border-right:0px solid transparent;}
+		.commentDisplay.commentAdmin .commentMain, .commentDisplay.commentAdmin .userAvatar { background:#577591; }
+		.commentDisplay.commentAdmin .infos { border-color:#06aff0;  }
+	/* Spam comments */
+		.commentDisplay.commentSpam { opacity:0.5; }
+		.commentDisplay.commentSpam:hover { opacity:1; }
+	/* Admin actions */
+		.commentDisplay .adminActions { height:22px; font-size:0.9em; float:right; display:none; }
+		.commentDisplay:hover .adminActions { display:block; }
+		.commentDisplay .adminActions li { padding-right:10px; }
+		.commentDisplay .adminActions li:after { content:""; }
+/* Spam count */
+	.spamCount { font-size:0.8em; font-style:italic; text-align:right; }
+
+
+
+/* Year calendar */
+	.calendarYear { width:100%; font-size:0.9em; border:none; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -moz-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); -webkit-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9); box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9);}
+	.calendarYear td { background:#36494b; padding:0px; border:none; text-align:center; }
+	.calendarYear td.year { background:#26383a; height:4.8em; line-height:4.8em; }
+	.calendarYear td a { display:block; height:4.8em; line-height:4.8em; }
+	.calendarYear td a:hover { background:#577591; color:#FFFFFF; }
+	.calendarYear td a:active { outline:none; -moz-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9) inset; -webkit-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9) inset; box-shadow:1px 1px 4px rgba(0, 0, 0, 0.9) inset;}
+	.calendarYear tr:first-of-type td:first-of-type, .calendarYear tr:first-of-type td:first-of-type a { border-top-left-radius:10px; -moz-border-radius-topleft:10px; -webkit-border-top-left-radius:10px;}
+	.calendarYear tr:first-of-type td:last-of-type, .calendarYear tr:first-of-type td:last-of-type a { border-top-right-radius:10px; -moz-border-radius-topright:10px; -webkit-border-top-right-radius:10px;}
+	.calendarYear tr:last-of-type td:first-of-type, .calendarYear tr:last-of-type td:first-of-type a { border-bottom-left-radius:10px; -moz-border-radius-bottomleft:10px; -webkit-border-bottom-left-radius:10px;}
+	.calendarYear tr:last-of-type td:last-of-type,  .calendarYear tr:last-of-type td:last-of-type a { border-bottom-right-radius:10px; -moz-border-radius-bottomright:10px; -webkit-border-bottom-right-radius:10px;}
+
+/* Tag list */
+	.tagList dt { width:120px; overflow:hidden; text-align:right; min-height:1.6em; line-height:1.6emx; margin:0px 10px 0.4em 0px; }
+	.tagList dd { background:#577591; height:1.6em; line-height:1.6em; text-align:right; padding:0px 0.4em 0px 0.8em; color:#FFFFFF; }
+
+/* About page */
+.aboutLayout .text { text-align:justify; }
+.aboutLayout .message ul li { margin-bottom:0.4em; }
+
+/* Contact */
+.contactSecondary h3:first-of-type { margin-top:0px; }
+	/* Hiding fieldset */
+	.js .fieldsetProject { display:none; }
+	/* IE6 */
+	.ie6 .contactMain textarea { width:430px;}
+
+/* Work */
+.workDisplay { margin-top:10px;}
+.workDisplay:first-of-type { margin-top:40px; }
+	/* Screen */
+	.workDisplay .screen a { position:relative; display:block; }
+	.workDisplay .screen a:before { content:" "; position:absolute; top:0px; bottom:0px; left:0px; right:0px; }
+	.workDisplay .screen a:before {
+		-webkit-box-shadow:50px 50px 50px #232b2d inset, -50px -50px 50px #232b2d inset;
+		-moz-box-shadow:50px 50px 50px #232b2d inset, -50px -50px 50px #232b2d inset;
+		box-shadow:50px 50px 50px #232b2d inset, -50px -50px 50px #232b2d inset;
+	}
+	.workDisplay .screen a:hover:before {
+		-webkit-box-shadow:10px 10px 10px #232b2d inset, -10px -10px 10px #232b2d inset;
+		-moz-box-shadow:10px 10px 10px #232b2d inset, -10px -10px 10px #232b2d inset;
+		box-shadow:10px 10px 10px #232b2d inset, -10px -10px 10px #232b2d inset;
+	}

@@ -1,0 +1,1 @@
+<?php	/**	 *	Information message	 **/	echo $this->Fastcode->message($message, 'information');
